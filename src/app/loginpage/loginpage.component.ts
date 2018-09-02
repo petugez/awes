@@ -7,7 +7,6 @@ import {AuthService} from '../auth/service/auth.service';
   styleUrls: [ './loginpage.component.css' ]
 })
 export class LoginPageComponent implements OnInit {
-  
 
   constructor(private authService:AuthService ) { }
 
@@ -16,7 +15,7 @@ export class LoginPageComponent implements OnInit {
   }
 
   login(){
-    this.authService.login();
+    this.authService.login().subscribe();
     console.log('Login called');
   }
  

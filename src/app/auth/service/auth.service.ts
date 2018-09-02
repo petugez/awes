@@ -2,27 +2,35 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { Observable, of } from 'rxjs';
-import {User} from '../../user/service/user';
+import { catchError, map, tap } from 'rxjs/operators';
+import { User } from '../../user/service/user';
 
 @Injectable()
 export class AuthService {
 
-    user:User;
-    
+    user: User;
+
     constructor(private http: HttpClient) { }
 
-    public getCurrent():User {
+    public getCurrent(): User {
         console.log('loading current user');
         return this.user;
     }
-    
-   public login():void{
-    const url = `http://localhost:3000/currentuser`;
-    this.http.get<User>(url).subscribe(user=>{this.user=user;});
-   }
-   public logout():void{
-       this.user=null;
-   }
+
+    public login(): Observable<User> {
+        const url = `http://localhost:3000/currentuser`;
+        return this.http.get<User>(url).pipe(
+            tap(
+                user => {
+                     this.user = user;
+                     console.log(user);
+                    }, 
+                error => { console.log(error) })
+        );
+    }
+    public logout(): void {
+        this.user = null;
+    }
 
 
 }
