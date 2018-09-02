@@ -13,7 +13,6 @@ export class AuthService {
     constructor(private http: HttpClient) { }
 
     public getCurrent(): User {
-        console.log('loading current user');
         return this.user;
     }
 

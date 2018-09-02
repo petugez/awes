@@ -16,7 +16,8 @@ import { HttpClient } from 'selenium-webdriver/http';
 import { UserModule } from './user/user.module';
 import {MainMenuComponent} from './mainmenu/mainmenu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import {AuthService} from './auth/service/auth.service'
+import {AuthService} from './auth/service/auth.service';
+import {AuthGuardService} from './security/auth-guard.service';
 
 @NgModule({
   imports: [
@@ -37,7 +38,7 @@ import {AuthService} from './auth/service/auth.service'
     MainMenuComponent,
     TestComponent
   ],
-  providers:[AuthService],
+  providers:[AuthService,AuthGuardService],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
