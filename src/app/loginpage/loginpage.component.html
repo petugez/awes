@@ -1,31 +1,68 @@
 <div class="wrapper fadeInDown">
-		<div id="formContent">
-		  <!-- Tabs Titles -->
-		  <h2 class="active"> Sign In </h2>
+	<div id="formContent">
+		<!-- Tabs Titles -->
+		<!-- <h2 class="active"> Sign In </h2>
 		  <h2 class="inactive underlineHover">Sign Up </h2>
-	  
-		  <!-- Icon -->
-		  <div class="fadeIn first">
+	   -->
+		<!-- Icon -->
+		<div class="fadeIn first">
 			<img src="http://www.dividenda.sk/wp-content/uploads/2017/10/div_logo_DIVIDENDA_350.png" id="icon" alt="User Icon" />
-		  </div>
-	  
-		  <!-- Login Form -->
-		  <form>
-				<div class="example-container" style="margin:15px">
-				<mat-form-field class="fadeIn second">
-						<input matInput type="email" matTooltip='user login' placeholder="Login">
-				</mat-form-field>
-				<mat-form-field class="fadeIn second">
-						<input matInput type="password" matTooltip='user login' placeholder="Passoword">
-				</mat-form-field>
-			</div>
-			<input type="submit" class="fadeIn fourth" value="Log In">
-		  </form>
-	  
-		  <!-- Remind Passowrd -->
-		  <div id="formFooter">
-			<a class="underlineHover" href="#">Forgot Password?</a>
-		  </div>
-	  
 		</div>
-	  </div>
+
+		<!-- Login Form -->
+		
+			<mat-tab-group>
+				<mat-tab label="Sign In">
+					<ng-template matTabContent>
+						<form>
+							<div class="example-container" style="margin:15px">
+								<mat-form-field class="fadeIn second">
+									<input matInput type="email" matTooltip='user login' placeholder="Login">
+								</mat-form-field>
+								<mat-form-field class="fadeIn second">
+									<input matInput type="password" matTooltip='user password' placeholder="Passoword">
+								</mat-form-field>
+							</div>
+							
+							<button matInput class="fadeIn fourt blue-button ">Log In</button>
+							<button mat-icon-button class="fadeIn fourt blue-icon-button "><mat-icon class="mat-icon-rtl-mirror" svgIcon="facebook"></mat-icon></button>
+						</form>
+						<!-- Remind Passowrd -->
+						<div id="formFooter">
+							<a class="underlineHover" href="#">Forgot Password?</a>
+						</div>
+
+					</ng-template>
+				</mat-tab>
+				<mat-tab label="Sign Up">
+					<ng-template matTabContent>
+						<form>
+							<div class="example-container" style="margin:15px">
+								<mat-form-field class="fadeIn second">
+									<input matInput type="email" matTooltip='user login' placeholder="Login">
+								</mat-form-field>
+								<mat-form-field class="fadeIn second">
+									<input matInput type="password" matTooltip='user password' placeholder="Passoword">
+								</mat-form-field>
+								<mat-form-field class="fadeIn second">
+									<input matInput type="password" matTooltip='password verification' placeholder="Verify Passoword">
+								</mat-form-field>
+							</div>
+							
+							<button matInput class="blue-button fadeIn fourt">Create Account</button>
+						</form>
+					</ng-template>
+					<!-- Remind Passowrd -->
+					<div id="formFooter">
+						<a class="underlineHover" href="#">Forgot Password?</a>
+					</div>
+
+				</mat-tab>
+			</mat-tab-group>
+		
+
+
+
+
+	</div>
+</div>
