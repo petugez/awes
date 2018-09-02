@@ -16,6 +16,7 @@ import { HttpClient } from 'selenium-webdriver/http';
 import { UserModule } from './user/user.module';
 import {MainMenuComponent} from './mainmenu/mainmenu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {AuthService} from './auth/service/auth.service'
 
 @NgModule({
   imports: [
@@ -36,7 +37,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MainMenuComponent,
     TestComponent
   ],
-  
+  providers:[AuthService],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

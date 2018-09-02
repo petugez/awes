@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import {AuthService} from '../auth/service/auth.service';
 
 @Component({
   selector: 'login-page',
@@ -9,11 +9,15 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export class LoginPageComponent implements OnInit {
   
 
-  constructor() { }
+  constructor(private authService:AuthService ) { }
 
   ngOnInit() {
    
   }
 
+  login(){
+    this.authService.login();
+    console.log('Login called');
+  }
  
 }
