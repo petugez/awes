@@ -1,7 +1,7 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule,MatCheckboxModule, MatSidenavModule, MatMenuModule, MatIconModule} from '@angular/material';
+import {MatButtonModule,MatCheckboxModule, MatSidenavModule, MatMenuModule, MatIconModule, MatFormFieldModule, MatInput, MatInputModule} from '@angular/material';
 import { FormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 
@@ -25,7 +25,7 @@ import {MainMenuComponent} from './mainmenu/mainmenu.component'
     HttpClientModule,
     BrowserAnimationsModule,
     
-    MatButtonModule, MatCheckboxModule,MatSidenavModule,MatMenuModule,MatIconModule
+    MatButtonModule, MatCheckboxModule,MatSidenavModule,MatMenuModule,MatIconModule,MatFormFieldModule,MatInputModule
    
   ],
   declarations: [
