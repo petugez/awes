@@ -12,7 +12,11 @@ export class AppComponent {
   constructor(private matIconRegistry: MatIconRegistry,private domSanitizer: DomSanitizer){
     this.matIconRegistry.addSvgIcon(
       `facebook`,
-      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/facebook.svg")
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../../assets/icons/facebook.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
+      `google-plus`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../../assets/icons/google-plus.svg")
     );
     console.log('registered icon');
     
