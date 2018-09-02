@@ -40,8 +40,7 @@
 
 
   ],
-  "users":
-  [  {"user":"valo"},{"user":"peto"}]
-
+  "user":
+  [ { "id":1,"login":"valo"},{"id":2,"login":"peto"}]
 
 }
