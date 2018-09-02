@@ -1,7 +1,7 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule,MatCheckboxModule, MatFormField, MatFormFieldModule, MatRadioModule, MatIconModule, MatOptionModule, MatSelectModule, MatInputModule} from '@angular/material';
+import {MatButtonModule,MatCheckboxModule, MatFormField, MatFormFieldModule, MatRadioModule, MatIconModule, MatOptionModule, MatSelectModule, MatInputModule, MatCard, MatCardModule, MatTooltipModule} from '@angular/material';
 import { FormsModule, FormBuilder, ControlContainer }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 
@@ -19,7 +19,7 @@ import {UserService} from './service/user.service'
     FormsModule,
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,MatInputModule,
-    MatFormFieldModule,MatOptionModule,MatSelectModule,
+    MatFormFieldModule,MatOptionModule,MatSelectModule,MatCardModule,MatTooltipModule,
     UserRoutingModule
 
   ],

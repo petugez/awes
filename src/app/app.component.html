@@ -1,3 +1,4 @@
-<h1>{{title}}</h1>
-<router-outlet></router-outlet>
-
+<mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" opened><main-menu></main-menu></mat-sidenav>
+    <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
+</mat-sidenav-container>
