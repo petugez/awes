@@ -10,7 +10,8 @@
     "build": "ng build --prod",
     "e2e": "ng e2e",
     "ng": "ng",
-    "start-mock": "json-server --watch mock/mock-data.json"
+    "start-mock-backend": "json-server --watch mock/mock-data.json",
+    "start-mock-all": "npm-run-all --parallel start start-mock-backend"
   },
   "keywords": [],
   "author": "",
@@ -59,6 +60,7 @@
     "lodash": "^4.16.2",
     "phantomjs-prebuilt": "^2.1.7",
     "protractor": "~5.3.0",
+    "run-all": "^1.0.1",
     "ts-node": "^5.0.1",
     "tslint": "^5.9.1",
     "typescript": "2.7.2"
