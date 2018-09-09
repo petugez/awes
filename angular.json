@@ -30,7 +30,7 @@
             ],
             "styles": [
               {
-                "input": "src/styles.css"
+                "input": "src/styles.scss"
               }
               
             ],
@@ -87,7 +87,7 @@
             "karmaConfig": "src/karma.conf.js",
             "styles": [
               {
-                "input": "styles.css"
+                "input": "styles.scss"
               }
             ],
             "scripts": [],
@@ -119,6 +119,7 @@
         }
       }
     },
+    
    
     "awes-e2e": {
       "root": "e2e/",

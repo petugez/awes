@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+@import "~@angular/material/theming";
+
+// Include non-theme styles for core.
+@include mat-core();
+
+$mat-custom-theme: (
+        50: #e8f4f5,
+        100: #c8e5e6,
+        200: #a5d6d6,
+        300: #81c2c7,
+        400: #66aabb,
+        500: #3dc0c0,
+        600: #439da0,
+        700: #38818e,
+        800: #2e717d,
+        900: #1b4b5e,
+        A100: #b9e5f6,
+        A200: #69dcf0,
+        A400: #00b0e6,
+        A700: #00bbc8,
+        contrast: (
+                50: $dark-primary-text,
+                100: $dark-primary-text,
+                200: $dark-primary-text,
+                300: $dark-primary-text,
+                400: $dark-primary-text,
+                500: $light-primary-text,
+                600: $light-primary-text,
+                700: $light-primary-text,
+                800: $light-primary-text,
+                900: $light-primary-text,
+                A100: $dark-primary-text,
+                A200: $light-primary-text,
+                A400: $light-primary-text,
+                A700: $light-primary-text,
+        )
+);
+
+// Define a theme.
+$primary: mat-palette($mat-custom-theme);
+$accent:  mat-palette($mat-pink, A200, A100, A400);
+
+$theme: mat-light-theme($primary, $accent);
+
+// Include all theme styles for the components.
+@include angular-material-theme($theme);
