@@ -23,9 +23,6 @@ export class UsersDataSource implements DataSource<User> {
 
     }
 
-
-    
-
     loadUsers(filter:string,
                 sortDirection:string,
                 pageIndex:number,
@@ -38,7 +35,7 @@ export class UsersDataSource implements DataSource<User> {
                 catchError(() => of([])),
                 finalize(() => this.loadingSubject.next(false))
             )
-            .subscribe(lessons => this.usersSubject.next(lessons));
+            .subscribe(users => { this.usersSubject.next(users); console.log(users)});
 
     }
 

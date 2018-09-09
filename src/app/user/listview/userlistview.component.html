@@ -1,52 +1,36 @@
-<div class="course">
+<div class="users-container">
 
     <!-- <h2>{{course?.description}}</h2>
 
     <img class="course-thumbnail" [src]="course?.iconUrl">
 
-    
-
-    <div class="spinner-container" *ngIf="dataSource.loading$ | async">
-
-        <mat-spinner></mat-spinner>
-
-    </div> -->
+     -->
 
     <mat-form-field>
-
-        <input matInput placeholder="Search lessons" #input>
-
+        <input matInput placeholder="Search user" #input>
     </mat-form-field>
+   
     <div class="spinner-container" *ngIf="dataSource.loading$ | async">
         <mat-spinner></mat-spinner>
     </div>
 
-    <mat-table class="lessons-table mat-elevation-z8" [dataSource]="dataSource"
-               matSort matSortActive="seqNo" matSortDirection="asc" matSortDisableClear>
+    <mat-table class="users table-table mat-elevation-z8" [dataSource]="dataSource"
+               matSort matSortActive="id" matSortDirection="asc" matSortDisableClear>
 
-        <ng-container matColumnDef="seqNo">
+        <ng-container matColumnDef="id">
 
             <mat-header-cell *matHeaderCellDef mat-sort-header>#</mat-header-cell>
 
-            <mat-cell *matCellDef="let lesson">{{lesson.seqNo}}</mat-cell>
+            <mat-cell *matCellDef="let user">{{user.id}}</mat-cell>
 
         </ng-container>
 
-        <ng-container matColumnDef="description">
+        <ng-container matColumnDef="login">
 
-            <mat-header-cell *matHeaderCellDef>Description</mat-header-cell>
+            <mat-header-cell *matHeaderCellDef>Login</mat-header-cell>
 
-            <mat-cell class="description-cell"
-                      *matCellDef="let lesson">{{lesson.description}}</mat-cell>
-
-        </ng-container>
-
-        <ng-container matColumnDef="duration">
-
-            <mat-header-cell *matHeaderCellDef>Duration</mat-header-cell>
-
-            <mat-cell class="duration-cell"
-                      *matCellDef="let lesson">{{lesson.duration}}</mat-cell>
+            <mat-cell class="login-cell"
+                      *matCellDef="let user">{{user.login}}</mat-cell>
 
         </ng-container>
 
@@ -57,8 +41,8 @@
     </mat-table>
 
 
-    <mat-paginator [length]="course?.lessonsCount" [pageSize]="3"
-                   [pageSizeOptions]="[3, 5, 10]"></mat-paginator>
+    <mat-paginator [length]="userSize" [pageSize]="3"
+                   [pageSizeOptions]="[1, 2, 10]"></mat-paginator>
 
 
 </div>

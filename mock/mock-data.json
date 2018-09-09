@@ -3,11 +3,15 @@
   "users": [
     {
       "id": 1,
-      "login": "valo"
+      "login": "valo",
+      "name": "john",
+      "surname":"Walker"
     },
     {
       "id": 2,
-      "login": "peto"
+      "login": "petugez",
+      "name": "Peter",
+      "surname":"Walker"
     }
   ],
   "currentuser": {

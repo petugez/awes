@@ -20,16 +20,17 @@ export class UserService {
     public findUsers( filter = '', sortOrder = 'asc',
         pageNumber = 0, pageSize = 3): Observable<User[]> {
 
-        return this.http.get('/api/users', {
+        return this.http.get<User[]>('/api/users', {
             params: new HttpParams()
                
-                .set('filter', filter)
-                .set('sortOrder', sortOrder)
-                .set('pageNumber', pageNumber.toString())
-                .set('pageSize', pageSize.toString())
-        }).pipe(
-            map(res => res["payload"])
-        );
+                .set('q', filter)
+                .set('_order', sortOrder)
+                .set('_page', pageNumber.toString())
+                .set('_limit', pageSize.toString())
+        });
+        // .pipe(
+        //     map(res => res["payload"])
+        // );
     }
 
 }

@@ -16,7 +16,9 @@ import {merge} from "rxjs/observable/merge";
 export class UserListViewComponent implements OnInit,AfterViewInit {
   
 
-  displayedColumns= ["seqNo", "description", "duration"];
+  userSize:number =10;
+
+  displayedColumns= ["id", "login"];
   dataSource: UsersDataSource;
 
   @ViewChild(MatPaginator) 
