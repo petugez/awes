@@ -1,7 +1,9 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule,MatCheckboxModule, MatFormField, MatFormFieldModule, MatRadioModule, MatIconModule, MatOptionModule, MatSelectModule, MatInputModule, MatCard, MatCardModule, MatTooltipModule} from '@angular/material';
+import {MatButtonModule, MatTableModule,MatCheckboxModule,
+        MatProgressSpinnerModule,MatPaginatorModule, 
+        MatFormField, MatFormFieldModule, MatRadioModule, MatIconModule, MatOptionModule, MatSelectModule, MatInputModule, MatCard, MatCardModule, MatTooltipModule, MatSortModule} from '@angular/material';
 import { FormsModule, FormBuilder, ControlContainer }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 
@@ -18,8 +20,8 @@ import {UserService} from './service/user.service'
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatButtonModule, MatCheckboxModule,MatInputModule,
-    MatFormFieldModule,MatOptionModule,MatSelectModule,MatCardModule,MatTooltipModule,
+    MatButtonModule, MatCheckboxModule,MatInputModule,MatTableModule,MatSortModule,
+    MatFormFieldModule,MatOptionModule,MatSelectModule,MatCardModule,MatTooltipModule,MatProgressSpinnerModule,MatPaginatorModule,
     UserRoutingModule
 
   ],
