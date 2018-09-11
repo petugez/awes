@@ -14,6 +14,7 @@ import {
   MatSortModule,
   MatTableModule,
   MatToolbarModule,
+  MatMenuModule,
   MatButtonModule,MatIconModule,MatCardModule,MatTabsModule
 } from "@angular/material";
 import {MatMomentDateModule} from "@angular/material-moment-adapter";
@@ -33,7 +34,7 @@ import { UserModule } from './user/user.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {AuthService} from './auth/service/auth.service';
 import {AuthGuardService} from './security/auth-guard.service';
-
+import {MainMenuComponent} from './mainmenu/mainmenu.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -48,6 +49,7 @@ import {AuthGuardService} from './security/auth-guard.service';
         MatIconModule,
         MatCardModule,
         MatTabsModule,
+        MatMenuModule,
         MatSidenavModule,
         MatListModule,
         MatToolbarModule,
@@ -65,7 +67,7 @@ import {AuthGuardService} from './security/auth-guard.service';
   ],
   declarations: [
     AppComponent,
-    LoginPageComponent,
+    LoginPageComponent,MainMenuComponent,
   
     TestComponent
   ],
