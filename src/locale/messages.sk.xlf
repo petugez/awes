@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="dcd47f4d6b26b045a1b041b2fc73123bc0cfc118" datatype="html">
+        <source>Log In</source>
+        <target>Prihlásiť</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/loginpage/loginpage.component.html</context>
+          <context context-type="linenumber">27</context>
+
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6a258b7c73f5dbb2f58c5321a9f4212583daa1b3" datatype="html">
+        <source><x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/><x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/loginpage/loginpage.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/loginpage/loginpage.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/loginpage/loginpage.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/loginpage/loginpage.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6255a8674662e55d6ccc3ad46cc1dd0dd6394d75" datatype="html">
+        <source>Forgot Password?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/loginpage/loginpage.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ba4f24bf9bf3dc4db3d6bc1b8b63339295f0b806" datatype="html">
+        <source>Sign In</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/loginpage/loginpage.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6765b4c916060f6bc42d9bb69e80377dbcb5e4e9" datatype="html">
+        <source>Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/loginpage/loginpage.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c32ef07f8803a223a83ed17024b38e8d82292407" datatype="html">
+        <source>Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/loginpage/loginpage.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bcd1e439caba9926b076fbcad03d4837a1674a8c" datatype="html">
+        <source>Verify Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/loginpage/loginpage.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e19fcf996343543e13789f17b550ab0c08124b5c" datatype="html">
+        <source>Create Account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/loginpage/loginpage.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

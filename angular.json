@@ -56,6 +56,15 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            },
+            "sk":{
+              "aot": true,
+              "outputPath": "dist/awes-fr/",
+              "baseHref": "/sk/",
+              "i18nFile": "src/locale/messages.sk.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "sk",
+              "i18nMissingTranslation": "error"
             }
           }
         },

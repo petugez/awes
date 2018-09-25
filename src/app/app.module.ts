@@ -1,4 +1,4 @@
-import { NgModule }       from '@angular/core';
+import { LOCALE_ID,NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 // import {MatButtonModule,MatCheckboxModule, MatSidenavModule, MatMenuModule, MatIconModule, MatFormFieldModule, MatInput, MatInputModule, MatTab, MatTabsModule, MatTooltipModule} from '@angular/material';
@@ -71,7 +71,7 @@ import {MainMenuComponent} from './mainmenu/mainmenu.component';
   
     TestComponent
   ],
-  providers:[AuthService,AuthGuardService],
+  providers:[AuthService,AuthGuardService,{ provide: LOCALE_ID, useValue: 'sk' }],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

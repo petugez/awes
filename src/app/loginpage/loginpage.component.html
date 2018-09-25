@@ -12,7 +12,7 @@
 		<!-- Login Form -->
 		
 			<mat-tab-group>
-				<mat-tab label="Sign In">
+				<mat-tab i18n-label label="Sign In">
 					<ng-template matTabContent>
 						<form>
 							<div class="example-container" style="margin:15px">
@@ -24,13 +24,13 @@
 								</mat-form-field>
 							</div>
 							
-							<button matInput class="fadeIn fourt blue-button" (click)="login()">Log In</button>
-							<button mat-icon-button  class="fadeIn fourt blue-icon-button" matTooltip="Login using Facebook"><mat-icon class="mat-icon-rtl-mirror" svgIcon="facebook"></mat-icon></button>
-							<button mat-icon-button  class="fadeIn fourt blue-icon-button" matTooltip="Login using Google"><mat-icon class="mat-icon-rtl-mirror" svgIcon="google-plus"></mat-icon></button>
+							<button i18n matInput class="fadeIn fourt blue-button" (click)="login()">Log In</button>
+							<button i18n mat-icon-button  class="fadeIn fourt blue-icon-button" matTooltip="Login using Facebook"><mat-icon class="mat-icon-rtl-mirror" svgIcon="facebook"></mat-icon></button>
+							<button i18n mat-icon-button  class="fadeIn fourt blue-icon-button" matTooltip="Login using Google"><mat-icon class="mat-icon-rtl-mirror" svgIcon="google-plus"></mat-icon></button>
 						</form>
 						<!-- Remind Passowrd -->
 						<div id="formFooter">
-							<a class="underlineHover" href="#">Forgot Password?</a>
+							<a i18n class="underlineHover" href="#">Forgot Password?</a>
 						</div>
 
 					</ng-template>
@@ -40,19 +40,19 @@
 						<form>
 							<div class="example-container" style="margin:15px">
 								<mat-form-field class="fadeIn second">
-									<input matInput type="email" matTooltip='user login' placeholder="Login">
+									<input i18n-placeholder matInput type="email" matTooltip='user login' placeholder="Login">
+								</mat-form-field>
+								<mat-form-field  class="fadeIn second">
+									<input i18n-placeholder matInput type="password" matTooltip='user password' placeholder="Password">
 								</mat-form-field>
 								<mat-form-field class="fadeIn second">
-									<input matInput type="password" matTooltip='user password' placeholder="Password">
-								</mat-form-field>
-								<mat-form-field class="fadeIn second">
-									<input matInput type="password" matTooltip='password verification' placeholder="Verify Password">
+									<input i18n-placeholder matInput type="password" matTooltip='password verification' placeholder="Verify Password">
 								</mat-form-field>
 							</div>
 							
-							<button matInput class="blue-button fadeIn fourt">Create Account</button>
-							<button mat-icon-button  class="fadeIn fourt blue-icon-button" matTooltip="Login using Facebook"><mat-icon class="mat-icon-rtl-mirror" svgIcon="facebook"></mat-icon></button>
-							<button mat-icon-button  class="fadeIn fourt blue-icon-button" matTooltip="Login using Google"><mat-icon class="mat-icon-rtl-mirror" svgIcon="google-plus"></mat-icon></button>
+							<button i18n  matInput class="blue-button fadeIn fourt">Create Account</button>
+							<button i18n mat-icon-button  class="fadeIn fourt blue-icon-button" matTooltip="Login using Facebook"><mat-icon class="mat-icon-rtl-mirror" svgIcon="facebook"></mat-icon></button>
+							<button i18n  mat-icon-button  class="fadeIn fourt blue-icon-button" matTooltip="Login using Google"><mat-icon class="mat-icon-rtl-mirror" svgIcon="google-plus"></mat-icon></button>
 						</form>
 					</ng-template>
 					<!-- Remind Passowrd -->
