@@ -5,13 +5,15 @@ import {MatButtonModule, MatTableModule,MatCheckboxModule,
         MatProgressSpinnerModule,MatPaginatorModule, 
         MatFormField, MatFormFieldModule, MatRadioModule, MatIconModule, MatOptionModule, MatSelectModule, MatInputModule, MatCard, MatCardModule, MatTooltipModule, MatSortModule} from '@angular/material';
 import { FormsModule, FormBuilder, ControlContainer }    from '@angular/forms';
+import { HttpClientModule }    from '@angular/common/http';
 
 
-import { UserListViewComponent } from './listview/userlistview.component';
-import { UserRoutingModule } from './user-routing.module';
-import { UserDetailViewComponent } from './detailview/userdetailview.component';
-
-import {UserService} from './service/user.service'
+import { CompanyListViewComponent } from './listview/comapnylistview.component';
+import { CompanyRoutingModule } from './company-routing.module';
+import { CompanyDetailViewComponent } from './detailview/companydetailview.component';
+//import { LoginPageComponent } from './loginpage/loginpage.component';
+import {Company} from './service/company';
+import {CompanyService} from './service/company.service'
 
 @NgModule({
   imports: [
@@ -20,15 +22,15 @@ import {UserService} from './service/user.service'
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,MatInputModule,MatTableModule,MatSortModule,
     MatFormFieldModule,MatOptionModule,MatSelectModule,MatCardModule,MatTooltipModule,MatProgressSpinnerModule,MatPaginatorModule,
-    UserRoutingModule
+    CompanyRoutingModule
 
   ],
   declarations: [
-    UserListViewComponent,
-    UserDetailViewComponent
+    CompanyListViewComponent,
+    CompanyDetailViewComponent
   ],
       
-  providers:[UserService]
+  providers:[CompanyService]
   
 })
-export class UserModule { }
+export class CompanyModule { }

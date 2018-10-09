@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {MatIconRegistry} from '@angular/material/icon';
+import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
-import {AuthService} from './auth/service/auth.service';
+import { AuthService } from './auth/service/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import {AuthService} from './auth/service/auth.service';
 })
 export class AppComponent {
   title = 'AWES';
-  constructor(private matIconRegistry: MatIconRegistry,private domSanitizer: DomSanitizer,private authService:AuthService){
+  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer, private authService: AuthService) {
     this.matIconRegistry.addSvgIcon(
       `facebook`,
       this.domSanitizer.bypassSecurityTrustResourceUrl("../../assets/icons/facebook.svg")
@@ -20,9 +20,9 @@ export class AppComponent {
       this.domSanitizer.bypassSecurityTrustResourceUrl("../../assets/icons/google-plus.svg")
     );
     console.log('registered icon');
-    
+
   }
-  public isAuthorized():boolean {
-    return this.authService.getCurrent()!=null;
+  public isAuthorized(): boolean {
+    return this.authService.getCurrent() != null;
   }
 }

@@ -27,9 +27,8 @@ import { AppRoutingModule }     from './app-routing.module';
 import { AppComponent }         from './app.component';
 import { LoginPageComponent } from './loginpage/loginpage.component';
 import {TestComponent} from './test/test.component';
-import { UserRoutingModule } from './user/user-routing.module';
-import { HttpClient } from 'selenium-webdriver/http';
 import { UserModule } from './user/user.module';
+import { CompanyModule } from './company/company.module';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {AuthService} from './auth/service/auth.service';
@@ -42,6 +41,7 @@ import {MainMenuComponent} from './mainmenu/mainmenu.component';
    
     AppRoutingModule,
     UserModule,
+    CompanyModule,
     HttpClientModule,
     BrowserAnimationsModule,
     FontAwesomeModule,

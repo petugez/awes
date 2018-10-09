@@ -1,54 +1,51 @@
-<div class="users-container">
+<div class="wrapper fadeInDown">
 
-    <!-- <h2>{{course?.description}}</h2>
+    <div class="users-container wrapper">
+
+        <!-- <h2>{{course?.description}}</h2>
 
     <img class="course-thumbnail" [src]="course?.iconUrl">
 
      -->
 
-    <mat-form-field>
-        <input matInput placeholder="Search user" #input>
-    </mat-form-field>
-   
-    <div class="spinner-container" *ngIf="dataSource.loading$ | async">
-        <mat-spinner></mat-spinner>
+        <mat-form-field>
+            <input matInput placeholder="Search user" #input>
+        </mat-form-field>
+
+        <div class="spinner-container" *ngIf="dataSource.loading$ | async">
+            <mat-spinner></mat-spinner>
+        </div>
+
+        <mat-table class="users table-table mat-elevation-z8" [dataSource]="dataSource" matSort matSortActive="id" matSortDirection="asc"
+            matSortDisableClear>
+
+            <ng-container matColumnDef="id">
+
+                <mat-header-cell *matHeaderCellDef mat-sort-header>#</mat-header-cell>
+
+                <mat-cell *matCellDef="let user">{{user.id}}</mat-cell>
+
+            </ng-container>
+
+            <ng-container matColumnDef="login">
+
+                <mat-header-cell *matHeaderCellDef>Login</mat-header-cell>
+
+                <mat-cell class="login-cell" *matCellDef="let user">{{user.login}}</mat-cell>
+
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+
+            <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+
+        </mat-table>
+
+
+        <mat-paginator [length]="userSize" [pageSize]="3" [pageSizeOptions]="[1, 2, 10]"></mat-paginator>
+
+
     </div>
-
-    <mat-table class="users table-table mat-elevation-z8" [dataSource]="dataSource"
-               matSort matSortActive="id" matSortDirection="asc" matSortDisableClear>
-
-        <ng-container matColumnDef="id">
-
-            <mat-header-cell *matHeaderCellDef mat-sort-header>#</mat-header-cell>
-
-            <mat-cell *matCellDef="let user">{{user.id}}</mat-cell>
-
-        </ng-container>
-
-        <ng-container matColumnDef="login">
-
-            <mat-header-cell *matHeaderCellDef>Login</mat-header-cell>
-
-            <mat-cell class="login-cell"
-                      *matCellDef="let user">{{user.login}}</mat-cell>
-
-        </ng-container>
-
-        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-
-        <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
-
-    </mat-table>
-
-
-    <mat-paginator [length]="userSize" [pageSize]="3"
-                   [pageSizeOptions]="[1, 2, 10]"></mat-paginator>
 
 
 </div>
-
-
-
-
-
-

@@ -17,5 +17,21 @@
   "currentuser": {
     "login": "peto",
     "roles": ["ADMIN"]
-  }
+  },
+  "companies":[
+    {
+      "id":1,
+      "name":"Dividenda",
+      "ownerName":"Valentin", 
+      "ownerSurname":"Kozanak"
+
+    },
+    {
+      "id":2,
+      "name":"RedSwarm",
+      "ownerName":"Peter", 
+      "ownerSurname":"Ladanyi"
+
+    }
+  ]
 }
