@@ -13,6 +13,7 @@
       </trans-unit>
       <trans-unit id="6a258b7c73f5dbb2f58c5321a9f4212583daa1b3" datatype="html">
         <source><x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/><x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/></source>
+        
         <context-group purpose="location">
           <context context-type="sourcefile">app/loginpage/loginpage.component.html</context>
           <context context-type="linenumber">28</context>

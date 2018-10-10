@@ -34,6 +34,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {AuthService} from './auth/service/auth.service';
 import {AuthGuardService} from './security/auth-guard.service';
 import {MainMenuComponent} from './mainmenu/mainmenu.component';
+import { MonthModule } from './monthview/month.module';
 @NgModule({
   imports: [
     BrowserModule,
@@ -42,6 +43,7 @@ import {MainMenuComponent} from './mainmenu/mainmenu.component';
     AppRoutingModule,
     UserModule,
     CompanyModule,
+    MonthModule,
     HttpClientModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
