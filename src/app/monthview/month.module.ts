@@ -10,15 +10,16 @@ import { HttpClientModule }    from '@angular/common/http';
 
 import { MonthListViewComponent } from './listview/monthlistview.component';
 import { MonthRoutingModule } from './month-routing.module';
-import { MonthDetailViewComponent } from './detailview/monthviewdetailview.component';
+import { MonthDetailViewComponent } from './detailview/monthdetailview.component';
 //import { LoginPageComponent } from './loginpage/loginpage.component';
 import {MonthData} from './service/monthview';
 import {MonthService} from './service/monthview.service';
+import { FlexModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule,
+    FormsModule,FlexModule,
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,MatInputModule,MatTableModule,MatSortModule,
     MatFormFieldModule,MatOptionModule,MatSelectModule,MatCardModule,MatTooltipModule,MatProgressSpinnerModule,MatPaginatorModule,
