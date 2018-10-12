@@ -1,6 +1,13 @@
-<div fxFlex="100%" class="month">
-    <div class="month-header"> 
+<div  fxFlex="100" class="month">
+    <div  class="month-header"> 
             {{month.name}}
     </div> 
     <!-- {{month|json}} -->
+    <ng-content ></ng-content>
+    <div class="month-footer">
+        D 1
+        PN  2
+        OCR 0 
+        OST 7
+    </div>
 </div>

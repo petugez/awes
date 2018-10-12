@@ -16,8 +16,8 @@ import {merge} from "rxjs/observable/merge";
 export class MonthListViewComponent implements OnInit {
  
   months=[{name:"january"},{name:"february"},{name:"march"},{name:"april"},
-  {name:"january"},{name:"february"},{name:"march"},{name:"april"},
-  {name:"january"},{name:"february"},{name:"march"},{name:"april"}];
+  {name:"may"},{name:"june"},{name:"jule"},{name:"august"},
+  {name:"september"},{name:"october"},{name:"november"},{name:"december"}];
 
   
   constructor(private route: ActivatedRoute,
