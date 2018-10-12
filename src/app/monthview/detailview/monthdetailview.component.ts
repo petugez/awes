@@ -11,7 +11,7 @@ import { Observable, of } from 'rxjs';
 @Component({
   selector: 'app-month',
   templateUrl: './monthdetailview.component.html',
-  styleUrls: ['./monthdetailview.component.css']
+  styleUrls: ['./monthdetailview.component.scss']
 })
 export class MonthDetailViewComponent implements OnInit {
 
