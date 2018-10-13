@@ -15,7 +15,7 @@ import { Observable, of } from 'rxjs';
 })
 export class UserDetailViewComponent implements OnInit {
 
-  user: User;
+  user: User= new User();
   userId: Number;
 
   editable:boolean=true;

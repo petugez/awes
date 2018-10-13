@@ -5,32 +5,33 @@ import {MatButtonModule, MatTableModule,MatCheckboxModule,
         MatProgressSpinnerModule,MatPaginatorModule, 
         MatFormField, MatFormFieldModule, MatRadioModule, MatIconModule, MatOptionModule, MatSelectModule, MatInputModule, MatCard, MatCardModule, MatTooltipModule, MatSortModule} from '@angular/material';
 import { FormsModule, FormBuilder, ControlContainer }    from '@angular/forms';
+import { HttpClientModule }    from '@angular/common/http';
 
 
-import { UserListViewComponent } from './listview/userlistview.component';
-import { UserRoutingModule } from './user-routing.module';
-import { UserDetailViewComponent } from './detailview/userdetailview.component';
-
-import {UserService} from './service/user.service'
+import { WeekListViewComponent } from './listview/weeklistview.component';
+import { WeekRoutingModule } from './week-routing.module';
+import { WeekDetailViewComponent } from './detailview/weekdetailview.component';
+//import { LoginPageComponent } from './loginpage/loginpage.component';
+import {WeekData} from './service/weekview';
+import {WeekService} from './service/weekview.service';
 import { FlexModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
-    FlexModule,
     BrowserModule,
-    FormsModule,
+    FormsModule,FlexModule,
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,MatInputModule,MatTableModule,MatSortModule,
     MatFormFieldModule,MatOptionModule,MatSelectModule,MatCardModule,MatTooltipModule,MatProgressSpinnerModule,MatPaginatorModule,
-    UserRoutingModule
+    WeekRoutingModule
 
   ],
   declarations: [
-    UserListViewComponent,
-    UserDetailViewComponent
+    WeekListViewComponent,
+    WeekDetailViewComponent
   ],
       
-  providers:[UserService]
+  providers:[WeekService]
   
 })
-export class UserModule { }
+export class WeekModule { }

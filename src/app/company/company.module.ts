@@ -13,11 +13,12 @@ import { CompanyRoutingModule } from './company-routing.module';
 import { CompanyDetailViewComponent } from './detailview/companydetailview.component';
 //import { LoginPageComponent } from './loginpage/loginpage.component';
 import {Company} from './service/company';
-import {CompanyService} from './service/company.service'
+import {CompanyService} from './service/company.service';
+import { FlexModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
-    BrowserModule,
+    BrowserModule,FlexModule,
     FormsModule,
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,MatInputModule,MatTableModule,MatSortModule,

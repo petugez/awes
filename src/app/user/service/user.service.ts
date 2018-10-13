@@ -12,7 +12,7 @@ export class UserService {
 
     public get(id: Number): Observable<User> {
         console.log('loading user' + id);
-        const url = `http://localhost:3000/user/${id}`;
+        const url = `/api/user/${id}`;
         return this.http.get<User>(url);
 
     }

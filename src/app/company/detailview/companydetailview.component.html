@@ -1,81 +1,91 @@
 <mat-card>
     <div class="example-container">
-        <div>
-            <mat-form-field class="example-full-width">
-                <input matInput matTooltip='Company Name' placeholder="Name of Company">
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field class="example-full-width">
-                <input matInput matTooltip='Owner name' placeholder="Name of owner">
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field class="example-full-width">
-                <input matInput matTooltip='Owner surname' placeholder="Surname of owner">
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field class="example-full-width">
-                <input matInput matTooltip='Owner surname' placeholder="Surname of owner">
-            </mat-form-field>
+        <div fxLayout="row wrap" fxLayoutGap="50px" >
+            <div fxLayout="column">
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput matTooltip='Company Name' placeholder="Name of Company" [(ngModel)]="company.name">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput matTooltip='Owner name' placeholder="Name of owner">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput matTooltip='Owner surname' placeholder="Surname of owner">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput matTooltip='Owner surname' placeholder="Surname of owner">
+                    </mat-form-field>
+                </div>
+
+
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput matTooltip='Street' placeholder="Street">
+                    </mat-form-field>
+                </div>
+
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput matTooltip='house number' placeholder="Nr.">
+                    </mat-form-field>
+                </div>
+
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput matTooltip='City' placeholder="City of Company Residence">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput matTooltip='State' placeholder="State">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="column">
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput matTooltip='Company Id' placeholder="Company Id">
+                    </mat-form-field>
+                </div>
+
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput matTooltip='Company VAT Id' placeholder="Company VAT Id">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput matTooltip='Company VAT Id2' placeholder="Company VAT Id2">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput matTooltip='Registry' placeholder="Registry">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput matTooltip='Phone Number' placeholder="Phone">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput matTooltip='Mobile Number' placeholder="Mobil">
+                    </mat-form-field>
+                </div>
+            </div>
         </div>
 
 
-        <div>
-            <mat-form-field class="example-full-width">
-                <input matInput matTooltip='Street' placeholder="Street">
-            </mat-form-field>
-        </div>
 
-        <div>
-            <mat-form-field class="example-full-width">
-                <input matInput matTooltip='house number' placeholder="Nr.">
-            </mat-form-field>
-        </div>
 
-        <div>
-            <mat-form-field class="example-full-width">
-                <input matInput matTooltip='City' placeholder="City of Company Residence">
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field class="example-full-width">
-                <input matInput matTooltip='State' placeholder="State">
-            </mat-form-field>
-        </div>
-
-        <div>
-            <mat-form-field class="example-full-width">
-                <input matInput matTooltip='Company Id' placeholder="Company Id">
-            </mat-form-field>
-        </div>
-
-        <div>
-            <mat-form-field class="example-full-width">
-                <input matInput matTooltip='Company VAT Id' placeholder="Company VAT Id">
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field class="example-full-width">
-                <input matInput matTooltip='Company VAT Id2' placeholder="Company VAT Id2">
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field class="example-full-width">
-                <input matInput matTooltip='Registry' placeholder="Registry">
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field class="example-full-width">
-                <input matInput matTooltip='Phone Number' placeholder="Phone">
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field class="example-full-width">
-                <input matInput matTooltip='Mobile Number' placeholder="Mobil">
-            </mat-form-field>
-        </div>
 
     </div>
 </mat-card>
+{{company|json}}

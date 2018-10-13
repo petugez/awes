@@ -3,24 +3,24 @@ import { HttpClient,HttpParams } from '@angular/common/http';
 
 import { Observable, of } from 'rxjs';
 import {map} from "rxjs/operators";
-import { Company } from './company';
+import { WeekData } from './weekview';
 
 @Injectable()
-export class CompanyService {
+export class WeekService {
 
     constructor(private http: HttpClient) { }
 
-    public get(id: Number): Observable<Company> {
+    public get(id: Number,subjectId: Number): Observable<WeekData> {
         console.log('loading company' + id);
-        const url = `/api/company/${id}`;
-        return this.http.get<Company>(url);
+        const url = `http://localhost:3000/month/${id}`;
+        return this.http.get<WeekData>(url);
 
     }
 
-    public findCompanies( filter = '', sortOrder = 'asc',
-        pageNumber = 0, pageSize = 3): Observable<Company[]> {
+    public findMonths( filter = '', sortOrder = 'asc',
+        pageNumber = 0, pageSize = 3): Observable<WeekData[]> {
 
-        return this.http.get<Company[]>('/api/companies', {
+        return this.http.get<WeekData[]>('/api/companies', {
             params: new HttpParams()
                
                 .set('q', filter)

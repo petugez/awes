@@ -15,7 +15,7 @@ import { Observable, of } from 'rxjs';
 })
 export class CompanyDetailViewComponent implements OnInit {
 
-  company: Company;
+  company: Company=new Company();
   companyId: Number;
 
   editable: boolean = true;

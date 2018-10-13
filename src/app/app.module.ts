@@ -29,6 +29,7 @@ import { LoginPageComponent } from './loginpage/loginpage.component';
 import { TestComponent } from './test/test.component';
 import { UserModule } from './user/user.module';
 import { CompanyModule } from './company/company.module';
+import {WeekModule} from './weekview/weekview.module';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AuthService } from './auth/service/auth.service';
@@ -46,6 +47,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     UserModule,
     CompanyModule,
     MonthModule,
+    WeekModule,
     HttpClientModule,
     BrowserAnimationsModule,
     FontAwesomeModule,

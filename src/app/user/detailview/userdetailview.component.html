@@ -1,17 +1,18 @@
 <mat-card>
-    <div class="example-container">
-        <mat-form-field class="example-full-width">
-            <input matInput matTooltip='user login' placeholder="Login">
+    <div fxLayout="column" class="example-container">
+        <mat-form-field  class="example-full-width">
+            <input matInput matTooltip='user login' placeholder="Login" [(ngModel)]="user.login" >
         </mat-form-field>
         <mat-form-field class="example-full-width">
-            <input matInput matTooltip='User name' placeholder="Name">
+            <input matInput matTooltip='User name' placeholder="Name" [(ngModel)]="user.name" >
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
-            <input matInput matTooltip='User surname' placeholder="Surname">
+            <input matInput matTooltip='User surname' placeholder="Surname" [(ngModel)]="user.surname" >
         </mat-form-field>
         <mat-form-field class="example-full-width">
-            <input matInput="email" matInput matTooltip="Email Address" placeholder="Email">
+            <input matInput="email" matInput matTooltip="Email Address" placeholder="Email" [(ngModel)]="user.email">
         </mat-form-field>
     </div>
+    {{user|json}}
 </mat-card>

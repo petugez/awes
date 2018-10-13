@@ -1,0 +1,23 @@
+.day {
+additive-symbols: -moz-repeating-linear-gradient();
+margin: 8px;
+ height:60px;
+ background-color: rgb(159, 236, 241);
+ /* min-width:500px; */
+ border-radius: 8px;
+    min-height: 160px;
+    /* box-shadow: 10px 10px rgb(170, 217, 223); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-width: 400px;
+    
+}
+
+.day-header{
+    /* border-radius: 15px; */
+    padding: 10px;
+    background-color: rgb(12, 100, 122);
+    border-radius: 8px 8px 0px 0px;
+    text-shadow: 2px 2px 5px rgb(50, 161, 152);
+    color:  rgb(206, 180, 34);
+    font-size: 30px;
+}
