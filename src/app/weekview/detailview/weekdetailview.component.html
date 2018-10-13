@@ -1,4 +1,9 @@
-<div fxFlex="100" class="day">
-    <div class="day-header"></div>
+<div fxFlex="100" class="month">
+    <div class="month-header"></div>
+
+    <div fxLayout="row wrap" fxFlexAlign="center"  fxLayoutGap="10px" fxLayout.xs="column" class="week">
+        <app-day *ngFor="let day of days" [day]="day"></app-day>
+    </div>
+
     <div flex class="day-number" >1 </div>
 </div>

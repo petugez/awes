@@ -2,7 +2,7 @@
 import { Component, OnInit,Input } from '@angular/core';
 
 import { MonthService } from '../service/monthview.service';
-import { ParamMap, ActivatedRoute } from '@angular/router';
+import { ParamMap, ActivatedRoute,Router } from '@angular/router';
 import {  MonthData } from '../service/monthview';
 
 import { switchMap } from 'rxjs/operators';
@@ -21,12 +21,16 @@ export class MonthDetailViewComponent implements OnInit {
 
   
 
-  constructor(private route: ActivatedRoute, private monthService: MonthService) {
+  constructor(private route: ActivatedRoute, private monthService: MonthService,private router:Router) {
 
   }
 
   ngOnInit() {
   
+  }
+  monthSelected(month:MonthData){
+    console.log(month);
+    this.router.navigate(["/week/"+month.id]);
   }
 
   

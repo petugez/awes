@@ -15,6 +15,7 @@ import { WeekDetailViewComponent } from './detailview/weekdetailview.component';
 import {WeekData} from './service/weekview';
 import {WeekService} from './service/weekview.service';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DayViewComponent } from './dayview/dayview.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   ],
   declarations: [
     WeekListViewComponent,
-    WeekDetailViewComponent
+    WeekDetailViewComponent,
+    DayViewComponent
   ],
       
   providers:[WeekService]

@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
 
-
 @import "~@angular/material/theming";
 
 // Include non-theme styles for core.
@@ -57,4 +56,4 @@ $theme: mat-light-theme($primary, $accent);
         width: 100%;
         min-height: 100%;
         padding: 20px;
-      }
+      };

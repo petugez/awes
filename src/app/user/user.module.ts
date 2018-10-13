@@ -20,7 +20,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatButtonModule, MatCheckboxModule,MatInputModule,MatTableModule,MatSortModule,
+    MatButtonModule, MatCheckboxModule,MatInputModule,MatTableModule,MatSortModule,MatIconModule,
     MatFormFieldModule,MatOptionModule,MatSelectModule,MatCardModule,MatTooltipModule,MatProgressSpinnerModule,MatPaginatorModule,
     UserRoutingModule
 

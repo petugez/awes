@@ -18,7 +18,7 @@ export class UserDetailViewComponent implements OnInit {
   user: User= new User();
   userId: Number;
 
-  editable:boolean=true;
+  editable:boolean=false;
 
   constructor(private route: ActivatedRoute, private userService: UserService) {
 
@@ -43,4 +43,17 @@ export class UserDetailViewComponent implements OnInit {
 
   }
 
+  onEditUser():void{
+    this.editable=true;
+  }
+  onCancelEdit():void{
+    this.editable=false;
+    this.loadUser();
+  }
+  onSaveUser():void{
+   this.userService.save(this.user).subscribe(user=>{
+     this.user=user;
+     this.editable=false;
+   });
+  }
 }

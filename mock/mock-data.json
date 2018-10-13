@@ -1,37 +1,37 @@
 {
-  
   "users": [
     {
       "id": 1,
-      "login": "valo",
+      "login": "valo22",
       "name": "john",
-      "surname":"Walker"
+      "surname": "Walker22",
+      "email": "ssssss"
     },
     {
       "id": 2,
       "login": "petugez",
       "name": "Peter",
-      "surname":"Walker"
+      "surname": "Walker"
     }
   ],
   "currentuser": {
     "login": "peto",
-    "roles": ["ADMIN"]
+    "roles": [
+      "ADMIN"
+    ]
   },
-  "companies":[
+  "companies": [
     {
-      "id":1,
-      "name":"Dividenda",
-      "ownerName":"Valentin", 
-      "ownerSurname":"Kozanak"
-
+      "id": 1,
+      "name": "Dividenda",
+      "ownerName": "Valentin",
+      "ownerSurname": "Kozanak"
     },
     {
-      "id":2,
-      "name":"RedSwarm",
-      "ownerName":"Peter", 
-      "ownerSurname":"Ladanyi"
-
+      "id": 2,
+      "name": "RedSwarm",
+      "ownerName": "Peter",
+      "ownerSurname": "Ladanyi"
     }
   ]
 }

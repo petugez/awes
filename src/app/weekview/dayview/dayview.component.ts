@@ -9,14 +9,14 @@ import { switchMap } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
 
 @Component({
-  selector: 'app-week',
-  templateUrl: './weekdetailview.component.html',
-  styleUrls: ['./weekdetailview.component.scss']
+  selector: 'app-day',
+  templateUrl: './dayview.component.html',
+  styleUrls: ['./dayview.component.scss']
 })
-export class WeekDetailViewComponent implements OnInit {
+export class DayViewComponent implements OnInit {
 
   @Input()
-  days=[{name:"Sunday",number:1},{name:"Monday",number:2},{name:"Tuesday",number:3},{name:"Wednesday",number:4},{name:"Thursday",number:5},{name:"Friday",number:6},{name:"Saturnday",number:7}]  ;
+  day={};
   
 
   

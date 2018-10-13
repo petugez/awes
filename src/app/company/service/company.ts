@@ -13,5 +13,5 @@ export class Company {
     public registry: String;
     public phone:String;
     public mobile:String;
-    public email:String;
+  
 }

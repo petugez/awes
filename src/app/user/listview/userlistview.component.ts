@@ -75,7 +75,7 @@ export class UserListViewComponent implements OnInit, AfterViewInit {
             this.paginator.pageIndex,
             this.paginator.pageSize);
     }
-    selectUser(row:any){
+    onSelectUser(row:any){
         console.log(row);
         this.router.navigate(['/user/'+row.id]); 
     }
