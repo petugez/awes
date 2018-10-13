@@ -16,7 +16,7 @@ import { merge } from "rxjs/observable/merge";
 export class CompanyListViewComponent implements OnInit, AfterViewInit {
 
 
-    userSize: number = 10;
+    companySize: number = 10;
 
 
     displayedColumns = ["id", "name", "ownerName", "ownerSurname"];

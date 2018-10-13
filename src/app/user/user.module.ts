@@ -16,7 +16,7 @@ import { FlexModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
-    FlexModule,
+    // FlexModule,
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,

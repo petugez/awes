@@ -3,4 +3,5 @@ export class User {
     public login: String;
     public name: String;
     public surname: String;
+    public email:String;
 }

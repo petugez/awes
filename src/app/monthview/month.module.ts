@@ -14,13 +14,13 @@ import { MonthDetailViewComponent } from './detailview/monthdetailview.component
 //import { LoginPageComponent } from './loginpage/loginpage.component';
 import {MonthData} from './service/monthview';
 import {MonthService} from './service/monthview.service';
-import { FlexModule } from '@angular/flex-layout';
+// import { FlexModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    FlexModule,
+    // FlexModule,
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,MatInputModule,MatTableModule,MatSortModule,
     MatFormFieldModule,MatOptionModule,MatSelectModule,MatCardModule,MatTooltipModule,MatProgressSpinnerModule,MatPaginatorModule,

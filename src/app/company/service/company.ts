@@ -4,12 +4,14 @@ export class Company {
     public ownerName: String;
     public ownerSurname: String;
     public street: String;
-    public streenNr: String;
+    public streetNr: String;
     public city: String;
     public state: String;
     public companyId: String;
     public vatId:String;
     public taxId:String;
+    public registry: String;
     public phone:String;
     public mobile:String;
+    public email:String;
 }
