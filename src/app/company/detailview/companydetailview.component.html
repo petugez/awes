@@ -1,6 +1,6 @@
 <mat-card>
     <div class="example-container">
-        <div fxLayout="row wrap" fxLayoutGap="50px" >
+        <div fxLayout="row wrap" fxLayoutGap="50px">
             <div fxLayout="column">
                 <div>
                     <mat-form-field class="example-full-width">
@@ -9,82 +9,74 @@
                 </div>
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Owner name' placeholder="Name of owner">
+                        <input matInput matTooltip='Owner name' placeholder="Name of owner" [(ngModel)]="company.ownerName">
                     </mat-form-field>
                 </div>
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Owner surname' placeholder="Surname of owner">
+                        <input matInput matTooltip='Owner surname' placeholder="Surname of owner" [(ngModel)]="company.ownerSurname">
                     </mat-form-field>
                 </div>
-                <div>
-                    <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Owner surname' placeholder="Surname of owner">
-                    </mat-form-field>
-                </div>
+              
 
 
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Street' placeholder="Street">
+                        <input matInput matTooltip='Street' placeholder="Street" [(ngModel)]="company.street">
                     </mat-form-field>
                 </div>
 
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='house number' placeholder="Nr.">
+                        <input matInput matTooltip='house number' placeholder="Nr." [(ngModel)]="company.streetNr">
                     </mat-form-field>
                 </div>
 
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='City' placeholder="City of Company Residence">
+                        <input matInput matTooltip='City' placeholder="City of Company Residence" [(ngModel)]="company.city">
                     </mat-form-field>
                 </div>
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='State' placeholder="State">
+                        <input matInput matTooltip='State' placeholder="State" [(ngModel)]="company.state">
                     </mat-form-field>
                 </div>
             </div>
             <div fxLayout="column">
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Company Id' placeholder="Company Id">
+                        <input matInput matTooltip='Company Id' placeholder="Company Id" [(ngModel)]="company.companyId">
                     </mat-form-field>
                 </div>
 
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Company VAT Id' placeholder="Company VAT Id">
+                        <input matInput matTooltip='Company VAT Id' placeholder="Company VAT Id" [(ngModel)]="company.vat">
                     </mat-form-field>
                 </div>
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Company VAT Id2' placeholder="Company VAT Id2">
+                        <input matInput matTooltip='Company tax Id2' placeholder="Company tax Id" [(ngModel)]="company.tax" >
                     </mat-form-field>
                 </div>
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Registry' placeholder="Registry">
+                        <input matInput matTooltip='Registry' placeholder="Registry" [(ngModel)]="company.registry" >
                     </mat-form-field>
                 </div>
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Phone Number' placeholder="Phone">
+                        <input matInput matTooltip='Phone Number' placeholder="Phone" [(ngModel)]="company.phone" >
                     </mat-form-field>
                 </div>
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Mobile Number' placeholder="Mobil">
+                        <input matInput matTooltip='Mobile Number' placeholder="Mobil" [(ngModel)]="company.mobil" >
                     </mat-form-field>
                 </div>
             </div>
         </div>
-
-
-
-
 
     </div>
 </mat-card>
