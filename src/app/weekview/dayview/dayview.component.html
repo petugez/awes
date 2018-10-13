@@ -1,8 +1,8 @@
-<div  fxFlex="100" class="day" (click)="monthSelected(month)">
+<div  fxFlex="100" class="day" (click)="onDaySelected(day)">
     <div  class="day-header"> 
             {{day.name}}
     </div> 
-    <!-- {{month|json}} -->
+    
     <ng-content ></ng-content>
     <div class="day-body">
        <h1>{{day.number}}</h1>

@@ -7,4 +7,5 @@ export class WeekData {
 export class Day {
     public id: String;
     public name: String;
+    public number: Number;
 }

@@ -3,7 +3,7 @@ import { Component, OnInit,Input } from '@angular/core';
 
 import { WeekService } from '../service/weekview.service';
 import { ParamMap, ActivatedRoute } from '@angular/router';
-import {  WeekData } from '../service/weekview';
+import {  Day } from '../service/weekview';
 
 import { switchMap } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
@@ -16,9 +16,7 @@ import { Observable, of } from 'rxjs';
 export class DayViewComponent implements OnInit {
 
   @Input()
-  day={};
-  
-
+  day:Day=new Day();
   
 
   constructor(private route: ActivatedRoute, private monthService: WeekService) {
@@ -29,5 +27,8 @@ export class DayViewComponent implements OnInit {
   
   }
 
+  onDaySelected(day:Day){
+    console.log(day);
+  }
   
 }

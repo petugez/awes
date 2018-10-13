@@ -4,37 +4,40 @@
             <div fxLayout="column">
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Company Name' placeholder="Name of Company" [(ngModel)]="company.name"[disabled]="!editable" >
+                        <input matInput matTooltip='Company Name' placeholder="Name of Company" [(ngModel)]="company.name"
+                            [disabled]="!editable">
                     </mat-form-field>
                 </div>
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Owner name' placeholder="Name of owner" [(ngModel)]="company.ownerName" [disabled]="!editable">
+                        <input matInput matTooltip='Owner name' placeholder="Name of owner" [(ngModel)]="company.ownerName"
+                            [disabled]="!editable">
                     </mat-form-field>
                 </div>
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Owner surname' placeholder="Surname of owner" [(ngModel)]="company.ownerSurname" [disabled]="!editable" >
+                        <input matInput matTooltip='Owner surname' placeholder="Surname of owner" [(ngModel)]="company.ownerSurname"
+                            [disabled]="!editable">
                     </mat-form-field>
                 </div>
-              
-
-
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Street' placeholder="Street" [(ngModel)]="company.street" [disabled]="!editable" >
-                    </mat-form-field>
-                </div>
-
-                <div>
-                    <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='house number' placeholder="Nr." [(ngModel)]="company.streetNr" [disabled]="!editable">
+                        <input matInput matTooltip='Street' placeholder="Street" [(ngModel)]="company.street"
+                            [disabled]="!editable">
                     </mat-form-field>
                 </div>
 
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='City' placeholder="City of Company Residence" [(ngModel)]="company.city" [disabled]="!editable">
+                        <input matInput matTooltip='house number' placeholder="Nr." [(ngModel)]="company.streetNr"
+                            [disabled]="!editable">
+                    </mat-form-field>
+                </div>
+
+                <div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput matTooltip='City' placeholder="City of Company Residence" [(ngModel)]="company.city"
+                            [disabled]="!editable">
                     </mat-form-field>
                 </div>
                 <div>
@@ -46,42 +49,54 @@
             <div fxLayout="column">
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Company Id' placeholder="Company Id" [(ngModel)]="company.companyId"[disabled]="!editable" >
+                        <input matInput matTooltip='Company Id' placeholder="Company Id" [(ngModel)]="company.companyId"
+                            [disabled]="!editable">
                     </mat-form-field>
                 </div>
 
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Company VAT Id' placeholder="Company VAT Id" [(ngModel)]="company.vatId"[disabled]="!editable" >
+                        <input matInput matTooltip='Company VAT Id' placeholder="Company VAT Id" [(ngModel)]="company.vatId"
+                            [disabled]="!editable">
                     </mat-form-field>
                 </div>
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Company tax Id2' placeholder="Company tax Id" [(ngModel)]="company.taxId" [disabled]="!editable" >
+                        <input matInput matTooltip='Company tax Id2' placeholder="Company tax Id" [(ngModel)]="company.taxId"
+                            [disabled]="!editable">
                     </mat-form-field>
                 </div>
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Registry' placeholder="Registry" [(ngModel)]="company.registry" [disabled]="!editable" >
+                        <input matInput matTooltip='Registry' placeholder="Registry" [(ngModel)]="company.registry"
+                            [disabled]="!editable">
                     </mat-form-field>
                 </div>
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Phone Number' placeholder="Phone" [(ngModel)]="company.phone" [disabled]="!editable" >
+                        <input matInput matTooltip='Phone Number' placeholder="Phone" [(ngModel)]="company.phone"
+                            [disabled]="!editable">
                     </mat-form-field>
                 </div>
                 <div>
                     <mat-form-field class="example-full-width">
-                        <input matInput matTooltip='Mobile Number' placeholder="Mobil" [(ngModel)]="company.mobile" [disabled]="!editable" >
+                        <input matInput matTooltip='Mobile Number' placeholder="Mobil" [(ngModel)]="company.mobile"
+                            [disabled]="!editable">
                     </mat-form-field>
                 </div>
             </div>
         </div>
         <div>
-            <button *ngIf="!editable" color="primary"   mat-button mat-raised-button (click)="onEditCompany()"><mat-icon>edit</mat-icon> Edit</button>
+            <button *ngIf="!editable" color="primary" mat-button mat-raised-button (click)="onEditCompany()">
+                <mat-icon>edit</mat-icon> Edit
+            </button>
             <div *ngIf="editable">
-                <button  color="accent"   mat-button mat-raised-button (click)="onSaveCompany()"><mat-icon>save</mat-icon>Save</button>
-                <button color="warn"   mat-button mat-raised-button (click)="onCancelEdit()"><mat-icon>cancel</mat-icon>Cancel</button>
+                <button color="accent" mat-button mat-raised-button (click)="onSaveCompany()">
+                    <mat-icon>save</mat-icon>Save
+                </button>
+                <button color="warn" mat-button mat-raised-button (click)="onCancelEdit()">
+                    <mat-icon>cancel</mat-icon>Cancel
+                </button>
             </div>
         </div>
 
