@@ -10,7 +10,7 @@
     "build": "ng build --prod",
     "e2e": "ng e2e",
     "ng": "ng",
-    "start-mock-backend": "json-server --port 4444 --watch mock/mock-data.json",
+    "start-mock-backend": "json-server --port 4444 --routes mock/routes.json --watch mock/mock-data.json",
     "start-mock-all": "npm-run-all --parallel start start-mock-backend"
   },
   "keywords": [],
