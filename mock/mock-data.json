@@ -12,6 +12,27 @@
       "login": "petugez",
       "name": "Peter",
       "surname": "Walker"
+    },
+    {
+      "login": "sss",
+      "name": "sss",
+      "surname": "sss",
+      "email": "s",
+      "id": 3
+    },
+    {
+      "login": "asd",
+      "name": "asd",
+      "surname": "asd",
+      "email": "asd",
+      "id": 4
+    },
+    {
+      "login": "test",
+      "name": "aa",
+      "surname": "aaa",
+      "email": "vvv",
+      "id": 5
     }
   ],
   "currentuser": {

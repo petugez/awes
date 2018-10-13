@@ -30,8 +30,14 @@ export class UserDetailViewComponent implements OnInit {
         of(params.get('id'))
       )
     ).subscribe((id) => {
-      this.userId =parseInt(id);
-      this.loadUser();
+      if (id!=='new'){
+        this.userId =parseInt(id);
+        this.loadUser();
+      }
+      else{
+        this.editable=true;
+      }
+
     });
   }
 
@@ -53,6 +59,7 @@ export class UserDetailViewComponent implements OnInit {
   onSaveUser():void{
    this.userService.save(this.user).subscribe(user=>{
      this.user=user;
+     this.userId=user.id;
      this.editable=false;
    });
   }

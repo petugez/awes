@@ -12,15 +12,27 @@ export class UserService {
 
     save(user: User): Observable<User> {
 
-
-       return this.http.put<User>('/api/user/'+user.id, user).pipe(
-        tap(
-            user => {
-                 console.log(user);
-                }, 
-            error => { console.log(error) })
-       )
-        ;
+    if (user.id==null){
+        return this.http.post<User>('/api/user/', user).pipe(
+            tap(
+                user => {
+                     console.log(user);
+                    }, 
+                error => { console.log(error) })
+           )
+            ;
+    }
+    else {
+        return this.http.put<User>('/api/user/'+user.id, user).pipe(
+            tap(
+                user => {
+                     console.log(user);
+                    }, 
+                error => { console.log(error) })
+           )
+            ;
+    }
+       
 
     }
 
@@ -44,9 +56,6 @@ export class UserService {
                 .set('_page', pageNumber.toString())
                 .set('_limit', pageSize.toString())
         });
-        // .pipe(
-        //     map(res => res["payload"])
-        // );
     }
 
 }

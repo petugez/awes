@@ -18,7 +18,7 @@ export class UserListViewComponent implements OnInit, AfterViewInit {
 
     userSize: number = 10;
 
-    displayedColumns = ["id", "login"];
+    displayedColumns = ["id", "login","name","surname"];
     dataSource: UsersDataSource;
 
     @ViewChild(MatPaginator)
@@ -79,6 +79,8 @@ export class UserListViewComponent implements OnInit, AfterViewInit {
         console.log(row);
         this.router.navigate(['/user/'+row.id]); 
     }
-
+    onCreateUser():void{
+        this.router.navigate(['/user/new']); 
+    }
 
 }
