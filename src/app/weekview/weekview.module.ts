@@ -14,13 +14,13 @@ import { WeekDetailViewComponent } from './detailview/weekdetailview.component';
 //import { LoginPageComponent } from './loginpage/loginpage.component';
 import {WeekData} from './service/weekview';
 import {WeekService} from './service/weekview.service';
-// import { FlexModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    // FlexModule,
+    FlexLayoutModule,
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,MatInputModule,MatTableModule,MatSortModule,
     MatFormFieldModule,MatOptionModule,MatSelectModule,MatCardModule,MatTooltipModule,MatProgressSpinnerModule,MatPaginatorModule,

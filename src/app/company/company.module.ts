@@ -14,12 +14,12 @@ import { CompanyDetailViewComponent } from './detailview/companydetailview.compo
 //import { LoginPageComponent } from './loginpage/loginpage.component';
 import {Company} from './service/company';
 import {CompanyService} from './service/company.service';
-// import { FlexModule } from '@angular/flex-layout';
+ import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
     BrowserModule,
-    // FlexModule,
+    FlexLayoutModule,
     FormsModule,
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,MatInputModule,MatTableModule,MatSortModule,

@@ -17,12 +17,12 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@angular/animations": "^6.1.6",
-    "@angular/cdk": "^6.4.7",
-    "@angular/common": "^6.0.0",
-    "@angular/compiler": "^6.0.0",
-    "@angular/core": "^6.0.0",
-    "@angular/flex-layout": "^7.0.0-beta.19",
+    "@angular/animations": "^7.0.0-rc.0",
+    "@angular/cdk": "^7.0.0-rc.0",
+    "@angular/common": "^7.0.0-rc.0",
+    "@angular/compiler": "^7.0.0-rc.0",
+    "@angular/core": "^7.0.0-rc.0",
+    "@angular/flex-layout": "7.0.0-beta.19",
     "@angular/forms": "^6.0.0",
     "@angular/http": "^6.0.0",
     "@angular/material": "^6.4.7",
@@ -69,7 +69,7 @@
     "run-all": "^1.0.1",
     "ts-node": "^5.0.1",
     "tslint": "^5.9.1",
-    "typescript": "2.7.2"
+    "typescript": "2.9.1"
   },
   "repository": {}
 }

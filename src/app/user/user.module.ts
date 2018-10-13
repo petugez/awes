@@ -12,11 +12,11 @@ import { UserRoutingModule } from './user-routing.module';
 import { UserDetailViewComponent } from './detailview/userdetailview.component';
 
 import {UserService} from './service/user.service'
-import { FlexModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
-    // FlexModule,
+    FlexLayoutModule,
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
