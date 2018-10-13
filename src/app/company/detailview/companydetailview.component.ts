@@ -18,7 +18,7 @@ export class CompanyDetailViewComponent implements OnInit {
   company: Company=new Company();
   companyId: Number;
 
-  editable: boolean = true;
+  editable: boolean = false;
 
   constructor(private route: ActivatedRoute, private companyService: CompanyService) {
 
@@ -30,8 +30,14 @@ export class CompanyDetailViewComponent implements OnInit {
         of(params.get('id'))
       )
     ).subscribe((id) => {
-      this.companyId = parseInt(id);
-      this.loadCompany();
+      if( id!="new"){
+        this.companyId = parseInt(id);
+        this.loadCompany();  
+      }
+      else{
+        this.editable=true;
+      }
+      
     });
   }
 
@@ -41,6 +47,21 @@ export class CompanyDetailViewComponent implements OnInit {
       console.log(this.company);
     });
 
+  }
+
+  onEditCompany():void{
+    this.editable=true;
+  }
+  onCancelEdit():void{
+    this.editable=false;
+    this.loadCompany();
+  }
+  onSaveCompany():void{
+   this.companyService.save(this.company).subscribe(company=>{
+     this.company=company;
+     this.companyId=this.company.id;
+     this.editable=false;
+   });
   }
 
 }

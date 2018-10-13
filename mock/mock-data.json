@@ -33,6 +33,19 @@
       "surname": "aaa",
       "email": "vvv",
       "id": 5
+    },
+    {
+      "name": "s",
+      "id": 6
+    },
+    {
+      "name": "name1",
+      "ownerName": "s",
+      "ownerSurname": "s",
+      "street": "s",
+      "city": "s",
+      "streetNr": "s",
+      "id": 7
     }
   ],
   "currentuser": {
@@ -53,6 +66,10 @@
       "name": "RedSwarm",
       "ownerName": "Peter",
       "ownerSurname": "Ladanyi"
+    },
+    {
+      "name": "xxx",
+      "id": 3
     }
   ]
 }

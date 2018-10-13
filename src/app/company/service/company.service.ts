@@ -2,11 +2,35 @@ import { Injectable } from '@angular/core';
 import { HttpClient,HttpParams } from '@angular/common/http';
 
 import { Observable, of } from 'rxjs';
-import {map} from "rxjs/operators";
 import { Company } from './company';
-
+import { catchError, map, tap } from 'rxjs/operators';
 @Injectable()
 export class CompanyService {
+    save(company: Company): Observable<Company> {
+
+        if (company.id == null) {
+            return this.http.post<Company>('/api/company/', company).pipe(
+                tap(
+                    user => {
+                        console.log(user);
+                    },
+                    error => { console.log(error) })
+            )
+                ;
+        }
+        else {
+            return this.http.put<Company>('/api/company/' + company.id, company).pipe(
+                tap(
+                    user => {
+                        console.log(user);
+                    },
+                    error => { console.log(error) })
+            )
+                ;
+        }
+
+
+    }
 
     constructor(private http: HttpClient) { }
 

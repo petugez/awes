@@ -80,5 +80,8 @@ export class CompanyListViewComponent implements OnInit, AfterViewInit {
         console.log(row);
         this.router.navigate(['/company/'+row.id]); 
     }
+    onCreateCompany():void{
+        this.router.navigate(['/company/new']); 
+    }
 
 }

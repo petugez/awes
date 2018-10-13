@@ -22,7 +22,7 @@ import {CompanyService} from './service/company.service';
     FlexLayoutModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatButtonModule, MatCheckboxModule,MatInputModule,MatTableModule,MatSortModule,
+    MatButtonModule, MatCheckboxModule,MatInputModule,MatTableModule,MatSortModule,MatIconModule,
     MatFormFieldModule,MatOptionModule,MatSelectModule,MatCardModule,MatTooltipModule,MatProgressSpinnerModule,MatPaginatorModule,
     CompanyRoutingModule
 

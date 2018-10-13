@@ -10,32 +10,6 @@ import { User } from './user';
 export class UserService {
 
 
-    save(user: User): Observable<User> {
-
-    if (user.id==null){
-        return this.http.post<User>('/api/user/', user).pipe(
-            tap(
-                user => {
-                     console.log(user);
-                    }, 
-                error => { console.log(error) })
-           )
-            ;
-    }
-    else {
-        return this.http.put<User>('/api/user/'+user.id, user).pipe(
-            tap(
-                user => {
-                     console.log(user);
-                    }, 
-                error => { console.log(error) })
-           )
-            ;
-    }
-       
-
-    }
-
     constructor(private http: HttpClient) { }
 
     public get(id: Number): Observable<User> {
@@ -44,6 +18,33 @@ export class UserService {
         return this.http.get<User>(url);
 
     }
+
+    save(user: User): Observable<User> {
+
+        if (user.id == null) {
+            return this.http.post<User>('/api/user/', user).pipe(
+                tap(
+                    user => {
+                        console.log(user);
+                    },
+                    error => { console.log(error) })
+            )
+                ;
+        }
+        else {
+            return this.http.put<User>('/api/user/' + user.id, user).pipe(
+                tap(
+                    user => {
+                        console.log(user);
+                    },
+                    error => { console.log(error) })
+            )
+                ;
+        }
+
+
+    }
+
 
     public findUsers(filter = '', sortOrder = 'asc',
         pageNumber = 0, pageSize = 3): Observable<User[]> {
