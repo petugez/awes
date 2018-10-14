@@ -51,36 +51,13 @@
     </mat-table>
 
 
-    <div class="fab-container">
-            <button mat-fab class="fab-toggler" (click)="onCreateCompany()" >
-                <i class="material-icons">add</i>
-            </button>
-            
-        </div>
-
-<div *ngIf="!editable" class="fab-container">
-            <button mat-fab class="fab-toggler" (click)="onEditUser()">
-                <i class="material-icons">edit</i>
-            </button>
-
-        </div>
-
-
-
-        <div *ngIf="editable" class="fab-container">
-            <button mat-fab class="fab-toggler" (click)="onSaveUser()">
-                <i class="material-icons">save</i>
-            </button>
-            <button mat-fab class="fab-toggler" (click)="onCancelEdit()">
-                <i class="material-icons">cancel</i>
-            </button>
-
-        </div>
-
-
     <mat-paginator [length]="companySize" [pageSize]="3" [pageSizeOptions]="[1, 2, 10]"></mat-paginator>
 
     
-    
+    <div class="fab-container">
+        <button mat-fab class="fab-toggler" (click)="onCreateCompany()" >
+            <i class="material-icons">add</i>
+        </button>
+    </div>
 
 </div>
