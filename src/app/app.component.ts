@@ -33,9 +33,6 @@ export class AppComponent {
   }
 
   private getMode(mediaChange: MediaChange): string {
-    console.log('media changed'+this.media.isActive('gt-sm'));
-    console.log(mediaChange);
-    
     // set mode based on a breakpoint
     if (this.media.isActive('gt-sm')) {
       this.opened=true;
