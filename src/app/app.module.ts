@@ -14,7 +14,7 @@ import {
   MatSortModule,
   MatTableModule,
   MatToolbarModule,
-  MatMenuModule,
+  MatMenuModule,MatBadgeModule,
   MatButtonModule, MatIconModule, MatCardModule, MatTabsModule
 } from "@angular/material";
 import { MatMomentDateModule } from "@angular/material-moment-adapter";
@@ -65,6 +65,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     MatSortModule,
     MatProgressSpinnerModule,
     MatDialogModule,
+    MatBadgeModule,
     AppRoutingModule,
     MatSelectModule,
     MatDatepickerModule,
