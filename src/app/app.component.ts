@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { AuthService } from './auth/service/auth.service';
+import { MediaChange, ObservableMedia } from "@angular/flex-layout";
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,11 @@ import { AuthService } from './auth/service/auth.service';
 })
 export class AppComponent {
   title = 'AWES';
-  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer, private authService: AuthService) {
+
+  mode: string = 'side';
+  opened: boolean = true;
+
+  constructor(private media: ObservableMedia,private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer, private authService: AuthService) {
     this.matIconRegistry.addSvgIcon(
       `facebook`,
       this.domSanitizer.bypassSecurityTrustResourceUrl("../../assets/icons/facebook.svg")
@@ -21,7 +26,28 @@ export class AppComponent {
     );
     console.log('registered icon');
 
+    this.media.subscribe((mediaChange: MediaChange) => {
+      this.mode = this.getMode(mediaChange);
+      
+    });
   }
+
+  private getMode(mediaChange: MediaChange): string {
+    console.log('media changed'+this.media.isActive('gt-sm'));
+    console.log(mediaChange);
+    
+    // set mode based on a breakpoint
+    if (this.media.isActive('gt-sm')) {
+      this.opened=true;
+      return 'side';
+      
+    } else {
+      this.opened=false;
+      return 'over';
+    }
+    
+  }
+
   public isAuthorized(): boolean {
     return this.authService.getCurrent() != null;
   }

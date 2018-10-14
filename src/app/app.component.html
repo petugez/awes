@@ -1,6 +1,6 @@
-<mat-sidenav-container  fullscreen>
+<mat-sidenav-container  >
 
-    <mat-sidenav #start>
+    <mat-sidenav #start [mode]="mode" [opened]="opened" >
         <mat-nav-list>
             <a mat-list-item routerLink="">
                 <mat-icon>home</mat-icon>
@@ -33,7 +33,7 @@
     <mat-toolbar  class="container" color="primary">
         <div fxFlex="100" >
             <div FlexLayout="row wrap" fx >
-                <button mat-icon-button (click)="start.open('mouse')">
+                <button *ngIf="!opened"  mat-icon-button (click)="start.open('mouse')">
                     <mat-icon>menu</mat-icon>
                 </button>
                 <div fxFlex="auto">
@@ -56,5 +56,6 @@
     </mat-toolbar>
 
     <router-outlet></router-outlet>
-
+    {{opened|json}} {{mode|json}}
 </mat-sidenav-container>
+ 
