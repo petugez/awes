@@ -1,25 +1,42 @@
-<mat-card  >
+<mat-card>
     <div fxLayout="column" class="example-container">
-        <mat-form-field  class="example-full-width">
-            <input matInput matTooltip='user login' placeholder="Login" [(ngModel)]="user.login" [disabled]="!editable" >
+        <mat-form-field class="example-full-width">
+            <input matInput matTooltip='user login' placeholder="Login" [(ngModel)]="user.login" [disabled]="!editable">
         </mat-form-field>
         <mat-form-field class="example-full-width">
-            <input matInput matTooltip='User name' placeholder="Name" [(ngModel)]="user.name" [disabled]="!editable" >
+            <input matInput matTooltip='User name' placeholder="Name" [(ngModel)]="user.name" [disabled]="!editable">
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
-            <input matInput matTooltip='User surname' placeholder="Surname" [(ngModel)]="user.surname" [disabled]="!editable" >
+            <input matInput matTooltip='User surname' placeholder="Surname" [(ngModel)]="user.surname" [disabled]="!editable">
         </mat-form-field>
         <mat-form-field class="example-full-width">
-            <input matInput="email" matInput matTooltip="Email Address" placeholder="Email" [(ngModel)]="user.email" [disabled]="!editable" >
+            <input matInput="email" matInput matTooltip="Email Address" placeholder="Email" [(ngModel)]="user.email"
+                [disabled]="!editable">
         </mat-form-field>
     </div>
     <div>
-        <button *ngIf="!editable" color="primary"   mat-button mat-raised-button (click)="onEditUser()"><mat-icon>edit</mat-icon> Edit</button>
-        <div *ngIf="editable">
-            <button  color="accent"   mat-button mat-raised-button (click)="onSaveUser()"><mat-icon>save</mat-icon>Save</button>
-            <button color="warn"   mat-button mat-raised-button (click)="onCancelEdit()"><mat-icon>cancel</mat-icon>Cancel</button>
+        <div *ngIf="!editable" class="fab-container">
+            <button mat-fab class="fab-toggler" (click)="onEditUser()">
+                <i class="material-icons">edit</i>
+            </button>
+
         </div>
+
+
+
+        <div *ngIf="editable" class="fab-container">
+            <button mat-fab class="fab-toggler" (click)="onSaveUser()">
+                <i class="material-icons">save</i>
+            </button>
+            <button mat-fab class="fab-toggler" (click)="onCancelEdit()">
+                <i class="material-icons">cancel</i>
+            </button>
+
+        </div>
+
+
+
     </div>
     <!-- {{user|json}} -->
 </mat-card>

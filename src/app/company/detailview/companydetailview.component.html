@@ -87,19 +87,20 @@
             </div>
         </div>
         <div>
-            <button *ngIf="!editable" color="primary" mat-button mat-raised-button (click)="onEditCompany()">
-                <mat-icon>edit</mat-icon> Edit
-            </button>
-            <div *ngIf="editable">
-                <button color="accent" mat-button mat-raised-button (click)="onSaveCompany()">
-                    <mat-icon>save</mat-icon>Save
+            <div *ngIf="!editable" class="fab-container">
+                <button mat-fab class="fab-toggler" (click)="onEditCompany()">
+                    <i class="material-icons">edit</i>
                 </button>
-                <button color="warn" mat-button mat-raised-button (click)="onCancelEdit()">
-                    <mat-icon>cancel</mat-icon>Cancel
+            </div>
+            <div *ngIf="editable" class="fab-container">
+                <button mat-fab class="fab-toggler" (click)="onSaveCompany()">
+                    <i class="material-icons">save</i>
+                </button>
+                <button mat-fab class="fab-toggler" (click)="onCancelEdit()">
+                    <i class="material-icons">cancel</i>
                 </button>
             </div>
         </div>
 
     </div>
 </mat-card>
-{{company|json}}
