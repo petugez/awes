@@ -34,17 +34,9 @@ export class DayViewComponent implements OnInit {
   
   }
 
-  onDaySelected(day:Day):void{
-    console.log(day);
-  }
-
-  onYearSelected():void{
-    console.log("year selected")
-  }
-
-  onSubjectSelected():void{
-    console.log("subject selected")
-  }
+ onDaySelected(day:any):void{
+  console.log("day selected");
+ }
 
   
 }

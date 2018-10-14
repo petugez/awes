@@ -1,13 +1,39 @@
-<div  fxFlex="100" class="month" (click)="monthSelected(month)">
-    <div  class="month-header"> 
-            {{month.name}}
-    </div> 
+<div fxFlex="100" class="month" (click)="monthSelected(month)">
+    <div class="month-header">
+        {{month.name}}
+    </div>
     <!-- {{month|json}} -->
-    <ng-content ></ng-content>
-    <div class="month-footer">
-        D 1
-        PN  2
-        OCR 0 
-        OST 7
+    <div class="month-body">
+        <ng-content></ng-content>
+    </div>
+    <div class="month-footer" fxLayout="row wrap" fxFlexAlign="space-between" fxLayoutGap="10px">
+     
+        <div class="month-footer-text">5</div>
+        
+        <button mat-icon-button matTooltip="Vacation">
+            <mat-icon matBadge="4" matBadgeColor="accent">beach_access</mat-icon>
+        </button>
+
+        <mat-divider [vertical]="true"></mat-divider>
+
+        <div class="month-footer-text">4</div>
+        <button mat-icon-button matTooltip="PN">
+            <mat-icon matBadge="12" matBadgeColor="accent">local_hospital</mat-icon>
+        </button>
+
+
+        <mat-divider [vertical]="true"></mat-divider>
+        <div class="month-footer-text">2</div>
+        <button mat-icon-button matTooltip="OCR">
+            <mat-icon matBadge="1" matBadgeColor="accent">people</mat-icon>
+        </button>
+
+        <mat-divider [vertical]="true"></mat-divider>
+        <div class="month-footer-text">3</div>
+        <button mat-icon-button matTooltip="Other">
+            <mat-icon matBadge="7" matBadgeColor="accent">help_online</mat-icon>
+        </button>
+
+
     </div>
 </div>
