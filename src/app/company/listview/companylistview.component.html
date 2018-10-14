@@ -9,7 +9,7 @@
     </div>
 
     <mat-table class="users table-table mat-elevation-z8" [dataSource]="dataSource" matSort matSortActive="id"
-        matSortDirection="asc" matSortDisableClear  >
+        matSortDirection="asc" matSortDisableClear>
 
         <ng-container matColumnDef="id">
 
@@ -43,7 +43,7 @@
         </ng-container>
 
 
-        
+
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
 
         <mat-row *matRowDef="let row; columns: displayedColumns" (click)="selectCompany(row)"></mat-row>
@@ -51,7 +51,16 @@
     </mat-table>
 
 
+    <div class="fab-container">
+            <button mat-fab class="fab-toggler" (click)="onCreateCompany()" >
+                <i class="material-icons">add</i>
+            </button>
+            
+        </div>
+
     <mat-paginator [length]="companySize" [pageSize]="3" [pageSizeOptions]="[1, 2, 10]"></mat-paginator>
 
-    <button mat-button (click)="onCreateCompany()" color="primary" >Create Company</button>
+    
+    
+
 </div>

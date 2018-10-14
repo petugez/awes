@@ -6,34 +6,43 @@
     <div class="month-body">
         <ng-content></ng-content>
     </div>
-    <div class="month-footer" fxLayout="row wrap" fxFlexAlign="space-between" fxLayoutGap="10px">
-     
-        <div class="month-footer-text">5</div>
-        
-        <button mat-icon-button matTooltip="Vacation">
-            <mat-icon matBadge="4" matBadgeColor="accent">beach_access</mat-icon>
-        </button>
+    <div class="month-footer" fxLayout="row wrap" fxLayoutAlign="space-around center">
+
+        <div>
+            <span class="month-footer-text">5</span>
+
+            <button mat-icon-button matTooltip="Vacation">
+                <mat-icon matBadge="4" matBadgeColor="accent">beach_access</mat-icon>
+            </button>
+        </div>
 
         <mat-divider [vertical]="true"></mat-divider>
 
-        <div class="month-footer-text">4</div>
-        <button mat-icon-button matTooltip="PN">
-            <mat-icon matBadge="12" matBadgeColor="accent">local_hospital</mat-icon>
-        </button>
+
+        <div>
+            <span class="month-footer-text">4</span>
+            <button mat-icon-button matTooltip="PN">
+                <mat-icon matBadge="12" matBadgeColor="accent">local_hospital</mat-icon>
+            </button>
+        </div>
 
 
         <mat-divider [vertical]="true"></mat-divider>
-        <div class="month-footer-text">2</div>
-        <button mat-icon-button matTooltip="OCR">
-            <mat-icon matBadge="1" matBadgeColor="accent">people</mat-icon>
-        </button>
+
+        <div>
+            <span class="month-footer-text">2</span>
+            <button mat-icon-button matTooltip="OCR">
+                <mat-icon matBadge="1" matBadgeColor="accent">people</mat-icon>
+            </button>
+        </div>
 
         <mat-divider [vertical]="true"></mat-divider>
-        <div class="month-footer-text">3</div>
-        <button mat-icon-button matTooltip="Other">
-            <mat-icon matBadge="7" matBadgeColor="accent">help_online</mat-icon>
-        </button>
-
+        <div>
+            <span class="month-footer-text">3</span>
+            <button mat-icon-button matTooltip="Other">
+                <mat-icon matBadge="7" matBadgeColor="accent">help_online</mat-icon>
+            </button>
+        </div>
 
     </div>
 </div>

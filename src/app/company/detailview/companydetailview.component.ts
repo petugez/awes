@@ -11,7 +11,7 @@ import { Observable, of } from 'rxjs';
 @Component({
   selector: 'company-detail-view',
   templateUrl: './companydetailview.component.html',
-  styleUrls: ['./companydetailview.component.css']
+  styleUrls: ['./companydetailview.component.scss']
 })
 export class CompanyDetailViewComponent implements OnInit {
 

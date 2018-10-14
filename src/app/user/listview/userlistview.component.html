@@ -2,7 +2,7 @@
 
     <div class="users-container wrapper">
 
-        
+
         <mat-form-field>
             <input matInput placeholder="Search user" #input>
         </mat-form-field>
@@ -11,8 +11,8 @@
             <mat-spinner></mat-spinner>
         </div>
 
-        <mat-table fxFlex="80%" class="users table-table mat-elevation-z8" [dataSource]="dataSource" matSort matSortActive="id" matSortDirection="asc"
-            matSortDisableClear>
+        <mat-table fxFlex="80%" class="users table-table mat-elevation-z8" [dataSource]="dataSource" matSort
+            matSortActive="id" matSortDirection="asc" matSortDisableClear>
 
             <ng-container matColumnDef="id">
 
@@ -54,9 +54,14 @@
 
         </mat-table>
 
-
         <mat-paginator [length]="userSize" [pageSize]="3" [pageSizeOptions]="[1, 2, 10]"></mat-paginator>
-        <button mat-button (click)="onCreateUser()" color="primary" >Create User</button>
+
+        <div class="fab-container">
+            <button mat-fab class="fab-toggler" (click)="onCreateUser()">
+                <i class="material-icons">add</i>
+            </button>
+
+        </div>
 
     </div>
 
