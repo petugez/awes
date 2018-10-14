@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "login": "valo22",
+      "login": "valo",
       "name": "john",
       "surname": "Walker22",
       "email": "ssssss"
@@ -63,9 +63,13 @@
     },
     {
       "id": 2,
-      "name": "RedSwarm",
+      "name": "RedSwarm s.r.o.",
       "ownerName": "Peter",
-      "ownerSurname": "Ladanyi"
+      "ownerSurname": "Ladanyi",
+      "street": "Karpatské námestie ",
+      "streetNr": "10A",
+      "city": "Bratislava",
+      "state": "Slovakia"
     },
     {
       "name": "xxx",

@@ -1,3 +1,25 @@
+<div>
+    <mat-form-field>
+        <mat-select placeholder="Subject">
+            
+            <mat-option *ngFor="let subject of subjects" #test (change)="onSubjectSelected()" [(value)]="subjectSelected">
+                <mat-icon>visibility</mat-icon> {{subject.name}}
+            </mat-option>
+            <!-- <mat-select-trigger>
+                <mat-icon>visibility</mat-icon>&nbsp;{{test|json}}
+            </mat-select-trigger> -->
+        </mat-select>
+    </mat-form-field>
+    
+    <mat-form-field>
+        <mat-select placeholder="Year" (change)="onYearSelected()" >
+            <mat-option *ngFor="let year of years" [(value)]="yearSelected">
+                {{year.number}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    
+</div>
 <div fxFlex="100" class="month">
     <div class="month-header"></div>
 
