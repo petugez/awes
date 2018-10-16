@@ -1,7 +1,6 @@
-<div class="wrapper fadeInDown">
 
-    <div class="users-container wrapper">
 
+    <div  class="user-container ">
 
         <mat-form-field>
             <input matInput placeholder="Search Leave Request" #input>
@@ -11,14 +10,14 @@
             <mat-spinner></mat-spinner>
         </div>
 
-        <mat-table fxFlex="80%" class="users table-table mat-elevation-z8" [dataSource]="dataSource" matSort
+        <mat-table class="leaveRequests table-table mat-elevation-z8" [dataSource]="dataSource" matSort
             matSortActive="id" matSortDirection="asc" matSortDisableClear>
 
             <ng-container matColumnDef="id">
 
                 <mat-header-cell *matHeaderCellDef mat-sort-header>#</mat-header-cell>
 
-                <mat-cell *matCellDef="let user">{{user.id}}</mat-cell>
+                <mat-cell *matCellDef="let leaveRequest">{{leaveRequest.id}}</mat-cell>
 
             </ng-container>
 
@@ -28,7 +27,7 @@
 
                 <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
 
-                <mat-cell class="login-cell" *matCellDef="let user">{{user.name}}</mat-cell>
+                <mat-cell class="login-cell" *matCellDef="let leaveRequest">{{leaveRequest.name}}</mat-cell>
 
             </ng-container>
 
@@ -36,7 +35,7 @@
 
                 <mat-header-cell *matHeaderCellDef>Surname</mat-header-cell>
 
-                <mat-cell class="login-cell" *matCellDef="let user">{{user.surname}}</mat-cell>
+                <mat-cell class="login-cell" *matCellDef="let leaveRequest">{{leaveRequest.surname}}</mat-cell>
 
             </ng-container>
 
@@ -44,7 +43,7 @@
 
                 <mat-header-cell *matHeaderCellDef>From</mat-header-cell>
 
-                <mat-cell class="login-cell" *matCellDef="let user">{{user.from|date:'dd.MM.yyyy':'+0200':'en'}}</mat-cell>
+                <mat-cell class="login-cell" *matCellDef="let leaveRequest">{{leaveRequest.from|date:'dd.MM.yyyy':'+0200':'en'}}</mat-cell>
 
             </ng-container>
 
@@ -52,14 +51,9 @@
 
                 <mat-header-cell *matHeaderCellDef>To</mat-header-cell>
 
-                <mat-cell class="login-cell" *matCellDef="let user">{{user.to|date:'dd.MM.yyyy':'+0200':'en'}}</mat-cell>
+                <mat-cell class="login-cell" *matCellDef="let leaveRequest">{{leaveRequest.to|date:'dd.MM.yyyy':'+0200':'en'}}</mat-cell>
 
             </ng-container>
-
-
-
-
-
 
             <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
 
@@ -67,7 +61,7 @@
 
         </mat-table>
 
-        <mat-paginator [length]="userSize" [pageSize]="3" [pageSizeOptions]="[1, 2, 10]"></mat-paginator>
+        <mat-paginator [length]="leaveRequestSize" [pageSize]="3" [pageSizeOptions]="[1, 2, 10]"></mat-paginator>
 
         <div class="fab-container">
             <button mat-fab class="fab-toggler" (click)="onCreateLeaveRequest()">
@@ -79,4 +73,3 @@
     </div>
 
 
-</div>
