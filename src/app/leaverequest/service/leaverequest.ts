@@ -5,7 +5,7 @@ export class LeaveRequest {
     public place:String;
     public from: String;
     public to: String;
-    public type: any;
+    public requestType: LeaveRequestType;
     public note:String;
     public halfDay:boolean;
 }

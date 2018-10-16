@@ -12,12 +12,15 @@
             <mat-datepicker #toDatepicker></mat-datepicker>
         </mat-form-field>
         <mat-form-field>
-            <mat-select [disabled]="!editable" placeholder="Request Type"  >
-                <mat-option *ngFor="let type of types" [(value)]="leaveRequest.type">
+            <mat-select [disabled]="!editable" placeholder="Request Type"  [(ngModel)]="leaveRequest.requestType">
+                <mat-option *ngFor="let type of types" value="type" >
                     {{type.name}}
                 </mat-option>
             </mat-select>
         </mat-form-field>
+
+      
+
         <!-- <mat-form-field class="example-full-width">
             
             <mat-slide-toggle matTooltip='Half Day' placeholder="halfDay" [(ngModel)]="leaveRequest.halfDay" ></mat-slide-toggle>

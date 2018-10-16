@@ -16,7 +16,7 @@ import { merge } from "rxjs/observable/merge";
 export class LeaveRequestListViewComponent implements OnInit, AfterViewInit {
 
 
-    userSize: number = 10;
+    leaveRequestSize: number = 10;
 
     displayedColumns = ["id","name","surname","from","to"];
     dataSource: UsersDataSource;
