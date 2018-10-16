@@ -65,6 +65,100 @@
       "note": "asdasd\nasd\n\nasd\n"
     }
   ],
+  "leaverequesttypes": [
+    {
+      "id": 1,
+      "name": "Riadna dovolenka"
+    },
+    {
+      "id": 2,
+      "name": "Platené voľno - návšteva lekára"
+    },
+    {
+      "id": 3,
+      "name": "Platené voľno - sprevádzanie RP do zdr. zariadenia"
+    },
+    {
+      "id": 4,
+      "name": "Platené voľno - ostatné"
+    },
+    {
+      "id": 5,
+      "name": "Náhradné voľno"
+    },
+    {
+      "id": 6,
+      "name": "Neplatené voľno - zákonné"
+    },
+    {
+      "id": 7,
+      "name": "Neplatené voľno - žiadosť zamestnanca"
+    },
+    {
+      "id": 8,
+      "name": "Neospravedlnená absencia"
+    },
+    {
+      "id": 9,
+      "name": "Choroba"
+    },
+    {
+      "id": 10,
+      "name": "Choroba (pracovný úraz)"
+    },
+    {
+      "id": 11,
+      "name": "Choroba (z povolania)"
+    },
+    {
+      "id": 12,
+      "name": "Choroba (karanténa)"
+    },
+    {
+      "id": 13,
+      "name": "Choroba (nad 52 týždňov)"
+    },
+    {
+      "id": 14,
+      "name": "Ošetrovné"
+    },
+    {
+      "id": 15,
+      "name": "Materská/Rodičovská dovolenka (dávka materské)"
+    },
+    {
+      "id": 16,
+      "name": "Materská dovolenka (bez dávky materské)"
+    },
+    {
+      "id": 17,
+      "name": "Rodičovská dovolenka (rodičovský príspevok)"
+    },
+    {
+      "id": 18,
+      "name": "Dávka materské u iného prac.pomeru"
+    },
+    {
+      "id": 19,
+      "name": "Pracovná cesta"
+    },
+    {
+      "id": 20,
+      "name": "Zákonný štrajk"
+    },
+    {
+      "id": 21,
+      "name": "Bez výkonu činnosti - dohoda mimo prac.pomeru"
+    },
+    {
+      "id": 22,
+      "name": "Prekážky na strane zamestnávateľa"
+    },
+    {
+      "id": 23,
+      "name": "Výkon väzby"
+    }
+  ],
   "companies": [
     {
       "id": 1,

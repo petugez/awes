@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { LeaveRequestService } from '../service/leaverequest.service';
 import { ParamMap, ActivatedRoute } from '@angular/router';
-import { LeaveRequest } from '../service/leaverequest';
+import { LeaveRequest, LeaveRequestType } from '../service/leaverequest';
 
 import { switchMap } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
@@ -17,12 +17,12 @@ export class LeaveRequestDetailViewComponent implements OnInit {
 
   leaveRequest: LeaveRequest = new LeaveRequest();
   leaveRequestId: Number;
-  types = [{ id: 1, name: "Dovolenka" }];
+  types: LeaveRequestType[]= [];
 
   editable: boolean = false;
 
   constructor(private route: ActivatedRoute, private leaveRequestService: LeaveRequestService) {
-
+   
   }
 
   ngOnInit() {
@@ -38,7 +38,7 @@ export class LeaveRequestDetailViewComponent implements OnInit {
       else {
         this.editable = true;
       }
-
+      this.leaveRequestService.getLeaveRequestTypes().subscribe(types=>{this.types=types});
     });
   }
 

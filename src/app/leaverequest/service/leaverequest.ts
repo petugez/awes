@@ -8,3 +8,7 @@ export class LeaveRequest {
     public type: any;
     public note:String;
 }
+export class LeaveRequestType{
+    public id: Number;
+    public name:String;
+}
