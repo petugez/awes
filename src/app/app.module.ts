@@ -14,7 +14,7 @@ import {
   MatSortModule,
   MatTableModule,
   MatToolbarModule,
-  MatMenuModule,MatBadgeModule,
+  MatMenuModule, MatBadgeModule,
   MatButtonModule, MatIconModule, MatCardModule, MatTabsModule
 } from "@angular/material";
 import { MatMomentDateModule } from "@angular/material-moment-adapter";
@@ -29,7 +29,8 @@ import { LoginPageComponent } from './loginpage/loginpage.component';
 import { TestComponent } from './test/test.component';
 import { UserModule } from './user/user.module';
 import { CompanyModule } from './company/company.module';
-import {WeekModule} from './weekview/weekview.module';
+import { WeekModule } from './weekview/weekview.module';
+import { LeaveRequestModule } from './leaverequest/leaverequest.module';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AuthService } from './auth/service/auth.service';
@@ -48,6 +49,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     CompanyModule,
     MonthModule,
     WeekModule,
+    LeaveRequestModule,
     HttpClientModule,
     BrowserAnimationsModule,
     FontAwesomeModule,

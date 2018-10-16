@@ -1,0 +1,82 @@
+<div class="wrapper fadeInDown">
+
+    <div class="users-container wrapper">
+
+
+        <mat-form-field>
+            <input matInput placeholder="Search Leave Request" #input>
+        </mat-form-field>
+
+        <div class="spinner-container" *ngIf="dataSource.loading$ | async">
+            <mat-spinner></mat-spinner>
+        </div>
+
+        <mat-table fxFlex="80%" class="users table-table mat-elevation-z8" [dataSource]="dataSource" matSort
+            matSortActive="id" matSortDirection="asc" matSortDisableClear>
+
+            <ng-container matColumnDef="id">
+
+                <mat-header-cell *matHeaderCellDef mat-sort-header>#</mat-header-cell>
+
+                <mat-cell *matCellDef="let user">{{user.id}}</mat-cell>
+
+            </ng-container>
+
+         
+
+            <ng-container matColumnDef="name">
+
+                <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+
+                <mat-cell class="login-cell" *matCellDef="let user">{{user.name}}</mat-cell>
+
+            </ng-container>
+
+            <ng-container matColumnDef="surname">
+
+                <mat-header-cell *matHeaderCellDef>Surname</mat-header-cell>
+
+                <mat-cell class="login-cell" *matCellDef="let user">{{user.surname}}</mat-cell>
+
+            </ng-container>
+
+            <ng-container matColumnDef="from">
+
+                <mat-header-cell *matHeaderCellDef>From</mat-header-cell>
+
+                <mat-cell class="login-cell" *matCellDef="let user">{{user.from}}</mat-cell>
+
+            </ng-container>
+
+            <ng-container matColumnDef="to">
+
+                <mat-header-cell *matHeaderCellDef>To</mat-header-cell>
+
+                <mat-cell class="login-cell" *matCellDef="let user">{{user.to}}</mat-cell>
+
+            </ng-container>
+
+
+
+
+
+
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+
+            <mat-row *matRowDef="let row; columns: displayedColumns" (click)="onSelectLeaveRequest(row)"></mat-row>
+
+        </mat-table>
+
+        <mat-paginator [length]="userSize" [pageSize]="3" [pageSizeOptions]="[1, 2, 10]"></mat-paginator>
+
+        <div class="fab-container">
+            <button mat-fab class="fab-toggler" (click)="onCreateLeaveRequest()">
+                <i class="material-icons">add</i>
+            </button>
+
+        </div>
+
+    </div>
+
+
+</div>

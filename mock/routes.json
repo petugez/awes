@@ -4,5 +4,6 @@
     "/posts/:category": "/posts?category=:category",
     "/articles\\?id=:id": "/posts/:id",
     "/company/*":"/companies/$1",
-    "/user/*":"/users/$1"
+    "/user/*":"/users/$1",
+    "/leaverequest/*":"/leaverequests/$1"
 }

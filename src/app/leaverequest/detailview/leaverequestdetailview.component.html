@@ -1,0 +1,47 @@
+<mat-card>
+    <div fxLayout="column" class="example-container">
+        
+        <mat-form-field class="example-full-width">
+          
+            <input matInput  placeholder="From" [(ngModel)]="leaveRequest.from" [matDatepicker]="fromDatepicker">
+            <mat-datepicker-toggle matSuffix [for]="fromDatepicker"></mat-datepicker-toggle>
+            <mat-datepicker #fromDatepicker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <input matInput  placeholder="To" [(ngModel)]="leaveRequest.to" [matDatepicker]="toDatepicker">
+            <mat-datepicker-toggle matSuffix [for]="toDatepicker"></mat-datepicker-toggle>
+            <mat-datepicker #toDatepicker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-select placeholder="Request Type"  >
+                <mat-option *ngFor="let type of types" [(value)]="leaveRequest.type">
+                    {{type.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+
+    </div>
+    <div>
+        <div *ngIf="!editable" class="fab-container">
+            <button mat-fab class="fab-toggler" (click)="onEditLeaveRequest()">
+                <i class="material-icons">edit</i>
+            </button>
+
+        </div>
+
+        <div *ngIf="editable" class="fab-container">
+            <button mat-fab class="fab-toggler" (click)="onSaveLeaveRequest()">
+                <i class="material-icons">save</i>
+            </button>
+            <button mat-fab class="fab-toggler" (click)="onCancelEdit()">
+                <i class="material-icons">cancel</i>
+            </button>
+
+        </div>
+
+
+
+    </div>
+    <!-- {{user|json}} -->
+</mat-card>
