@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatButtonModule, MatTableModule, MatCheckboxModule,
-  MatProgressSpinnerModule, MatPaginatorModule,MatDatepickerModule,
+  MatProgressSpinnerModule, MatPaginatorModule,MatDatepickerModule,MatSliderModule,MatSlideToggleModule,
   MatFormField, MatFormFieldModule, MatRadioModule, MatIconModule, MatOptionModule, MatSelectModule, MatInputModule, MatCard, MatCardModule, MatTooltipModule, MatSortModule
 } from '@angular/material';
 import { FormsModule, FormBuilder, ControlContainer } from '@angular/forms';
@@ -21,7 +21,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FlexLayoutModule,
     BrowserModule,
     FormsModule,
-    BrowserAnimationsModule,MatDatepickerModule,
+    BrowserAnimationsModule,MatDatepickerModule,MatSliderModule,MatSlideToggleModule,
     MatButtonModule, MatCheckboxModule, MatInputModule, MatTableModule, MatSortModule, MatIconModule,
     MatFormFieldModule, MatOptionModule, MatSelectModule, MatCardModule, MatTooltipModule, MatProgressSpinnerModule, MatPaginatorModule,
     LeaveRequestRoutingModule

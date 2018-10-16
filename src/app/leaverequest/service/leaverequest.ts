@@ -7,6 +7,7 @@ export class LeaveRequest {
     public to: String;
     public type: any;
     public note:String;
+    public halfDay:boolean;
 }
 export class LeaveRequestType{
     public id: Number;

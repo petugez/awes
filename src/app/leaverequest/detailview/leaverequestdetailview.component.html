@@ -2,7 +2,6 @@
     <div fxLayout="column" class="example-container">
         
         <mat-form-field class="example-full-width">
-          
             <input [disabled]="!editable" matInput  placeholder="From" [(ngModel)]="leaveRequest.from" [matDatepicker]="fromDatepicker">
             <mat-datepicker-toggle matSuffix [for]="fromDatepicker"></mat-datepicker-toggle>
             <mat-datepicker #fromDatepicker></mat-datepicker>
@@ -19,6 +18,12 @@
                 </mat-option>
             </mat-select>
         </mat-form-field>
+        <!-- <mat-form-field class="example-full-width">
+            
+            <mat-slide-toggle matTooltip='Half Day' placeholder="halfDay" [(ngModel)]="leaveRequest.halfDay" ></mat-slide-toggle>
+        </mat-form-field> -->
+
+
         <mat-form-field class="example-full-width">
             <input matInput matTooltip='Place' placeholder="Place" [(ngModel)]="leaveRequest.place" [disabled]="!editable">
         </mat-form-field>

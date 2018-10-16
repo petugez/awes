@@ -44,7 +44,7 @@
 
                 <mat-header-cell *matHeaderCellDef>From</mat-header-cell>
 
-                <mat-cell class="login-cell" *matCellDef="let user">{{user.from}}</mat-cell>
+                <mat-cell class="login-cell" *matCellDef="let user">{{user.from|date:'dd.MM.yyyy':'+0200':'en'}}</mat-cell>
 
             </ng-container>
 
@@ -52,7 +52,7 @@
 
                 <mat-header-cell *matHeaderCellDef>To</mat-header-cell>
 
-                <mat-cell class="login-cell" *matCellDef="let user">{{user.to}}</mat-cell>
+                <mat-cell class="login-cell" *matCellDef="let user">{{user.to|date:'dd.MM.yyyy':'+0200':'en'}}</mat-cell>
 
             </ng-container>
 
