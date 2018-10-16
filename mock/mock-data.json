@@ -61,7 +61,8 @@
     {
       "from": "2018-10-09T22:00:00.000Z",
       "to": "2018-10-27T22:00:00.000Z",
-      "id": 2
+      "id": 2,
+      "note": "asdasd\nasd\n\nasd\n"
     }
   ],
   "companies": [

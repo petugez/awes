@@ -3,23 +3,28 @@
         
         <mat-form-field class="example-full-width">
           
-            <input matInput  placeholder="From" [(ngModel)]="leaveRequest.from" [matDatepicker]="fromDatepicker">
+            <input [disabled]="!editable" matInput  placeholder="From" [(ngModel)]="leaveRequest.from" [matDatepicker]="fromDatepicker">
             <mat-datepicker-toggle matSuffix [for]="fromDatepicker"></mat-datepicker-toggle>
             <mat-datepicker #fromDatepicker></mat-datepicker>
         </mat-form-field>
         <mat-form-field class="example-full-width">
-            <input matInput  placeholder="To" [(ngModel)]="leaveRequest.to" [matDatepicker]="toDatepicker">
+            <input [disabled]="!editable" matInput  placeholder="To" [(ngModel)]="leaveRequest.to" [matDatepicker]="toDatepicker">
             <mat-datepicker-toggle matSuffix [for]="toDatepicker"></mat-datepicker-toggle>
             <mat-datepicker #toDatepicker></mat-datepicker>
         </mat-form-field>
         <mat-form-field>
-            <mat-select placeholder="Request Type"  >
+            <mat-select [disabled]="!editable" placeholder="Request Type"  >
                 <mat-option *ngFor="let type of types" [(value)]="leaveRequest.type">
                     {{type.name}}
                 </mat-option>
             </mat-select>
         </mat-form-field>
-
+        <mat-form-field class="example-full-width">
+            <input matInput matTooltip='Place' placeholder="Place" [(ngModel)]="leaveRequest.place" [disabled]="!editable">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <textarea matInput matTooltip='Note' placeholder="Note" [(ngModel)]="leaveRequest.note" [disabled]="!editable"></textarea>
+        </mat-form-field>
 
     </div>
     <div>

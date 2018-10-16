@@ -13,8 +13,8 @@ export class LeaveRequestService {
     constructor(private http: HttpClient) { }
 
     public get(id: Number): Observable<LeaveRequest> {
-        console.log('loading user' + id);
-        const url = `/api/user/${id}`;
+        console.log('loading leave request' + id);
+        const url = `/api/leaverequest/${id}`;
         return this.http.get<LeaveRequest>(url);
 
     }
