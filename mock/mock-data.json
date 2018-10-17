@@ -183,5 +183,407 @@
       "name": "xxx",
       "id": 3
     }
+  ],
+  "lifeinsurances": [
+    {
+      "id": 1,
+      "name": "AEGON Životná poisťovňa, a. s."
+    },
+    {
+      "id": 2,
+      "name": "Allianz - Slovenská poisťovňa, a. s."
+    },
+    {
+      "id": 3,
+      "name": "ERGO Poisťovňa, a. s."
+    },
+    {
+      "id": 4,
+      "name": "Generali poisťovňa, a. s."
+    },
+    {
+      "id": 5,
+      "name": "KOMUNÁLNA poisťovňa, a. s."
+    },
+    {
+      "id": 6,
+      "name": "KOOPERATIVA poisťovňa, a. s."
+    },
+    {
+      "id": 7,
+      "name": "NN Životná poisťovňa, a. s."
+    },
+    {
+      "id": 8,
+      "name": "NOVIS Poisťovňa, a. s."
+    },
+    {
+      "id": 9,
+      "name": "Poisťovňa Slovenskej sporiteľne, a. s."
+    },
+    {
+      "id": 10,
+      "name": "Poštová poisťovňa, a. s."
+    },
+    {
+      "id": 11,
+      "name": "Rapid life životná poisťovňa, a. s."
+    },
+    {
+      "id": 12,
+      "name": "UNIQUA poisťovňa, a. s."
+    },
+    {
+      "id": 13,
+      "name": "Wüstenrot poisťovňa, a. s."
+    }
+  ],
+  "healtinsurances": [
+    {
+      "id": 1,
+      "name": "Dôvera zdravotná poisťovňa a. s."
+    },
+    {
+      "id": 2,
+      "name": "Union zdravotná poisťovňa a. s. "
+    },
+    {
+      "id": 3,
+      "name": "Všeobecná zdravotná pousťovňa"
+    }
+  ],
+  "personalstatus": [
+    {
+      "id": 1,
+      "name": "Neuvedený"
+    },
+    {
+      "id": 2,
+      "name": "Slobodný"
+    },
+    {
+      "id": 3,
+      "name": "Ženatý"
+    },
+    {
+      "id": 4,
+      "name": "Rozvedený"
+    },
+    {
+      "id": 5,
+      "name": "Vdovec"
+    },
+    {
+      "id": 6,
+      "name": "Druh"
+    },
+    {
+      "id": 7,
+      "name": "Slobodná"
+    },
+    {
+      "id": 8,
+      "name": "Vydatá"
+    },
+    {
+      "id": 9,
+      "name": "Rozvedená"
+    },
+    {
+      "id": 10,
+      "name": "Vdova"
+    },
+    {
+      "id": 11,
+      "name": "Družka"
+    }
+  ],
+  "wageparts": [
+    {
+      "id": 1,
+      "name": "% prémie"
+    },
+    {
+      "id": 2,
+      "name": "Nadčasy"
+    },
+    {
+      "id": 3,
+      "name": "Nepeňažný príspevok zo soc. fondu"
+    },
+    {
+      "id": 4,
+      "name": "Nezdaniteľné náhrady"
+    },
+    {
+      "id": 5,
+      "name": "Nezdaniteľné náhrady II"
+    },
+    {
+      "id": 6,
+      "name": "Odpracované sviatky"
+    },
+    {
+      "id": 7,
+      "name": "Osobné ohodnotenie"
+    },
+    {
+      "id": 8,
+      "name": "Peňažný príspevok zo soc. fondu"
+    },
+    {
+      "id": 9,
+      "name": "Prémie"
+    },
+    {
+      "id": 10,
+      "name": "Prostredie"
+    }
+  ],
+  "taxitemtypes": [
+    {
+      "id": 1,
+      "name": "daňovník (podpísal prehlásenie)"
+    },
+    {
+      "id": 2,
+      "name": "vyživované deti (daňový bonus)"
+    },
+    {
+      "id": 3,
+      "name": "manželka (manžel)"
+    },
+    {
+      "id": 4,
+      "name": "starobný dôchodok"
+    },
+    {
+      "id": 5,
+      "name": "príjem u iného zamestnávateľa"
+    },
+    {
+      "id": 6,
+      "name": "nárok na daňový bonus u iného zamestnávateľa"
+    },
+    {
+      "id": 7,
+      "name": "daňový bonus vyplaatený u iného zamestnávateľa"
+    },
+    {
+      "id": 8,
+      "name": "preddavky na daň u iného zamestnávateľa"
+    },
+    {
+      "id": 9,
+      "name": "zdravotné poistné u iného zamestnávateľa"
+    },
+    {
+      "id": 10,
+      "name": "sociálne poistné u iného zamestnávateľa"
+    },
+    {
+      "id": 11,
+      "name": "nesprávne vyplatená zamestnanecká prémia"
+    },
+    {
+      "id": 12,
+      "name": "zaplatené príspevky na DDS"
+    },
+    {
+      "id": 13,
+      "name": "príjem na dohodu u iného zamestnávateľa"
+    }
+  ],
+  "paymenttypes": [
+    {
+      "id": 1,
+      "name": "na účet"
+    },
+    {
+      "id": 2,
+      "name": "v hotovosti"
+    }
+  ],
+  "sexTypes": [
+    {
+      "id": 1,
+      "name": "muž"
+    },
+    {
+      "id": 2,
+      "name": "žena"
+    }
+  ],
+  "swiftcodes": [
+    {
+      "id": 1,
+      "name": "SUBASKBX Všeobecná úverová banka, a. s."
+    },
+    {
+      "id": 2,
+      "name": "NBSBSKBX Národná banka Slovenska"
+    },
+    {
+      "id": 3,
+      "name": "GIBASKBX Slovenská sporitaeľňa, a. s."
+    },
+    {
+      "id": 4,
+      "name": "TATRSKBX Tatra banka, a. s."
+    },
+    {
+      "id": 5,
+      "name": "UNCRSKBX UniCredit Bank Czech Republic and Slovakia, a. s., pobočka zahraničnej banky "
+    },
+    {
+      "id": 6,
+      "name": "SLZBSKBA Slovenská záručná a rozvojová banka, a. s."
+    },
+    {
+      "id": 7,
+      "name": "OTPVSKBX OTP Banka Slovensko, a. s."
+    },
+    {
+      "id": 8,
+      "name": "KOMASK2X Prima banka Slovensko, a. s."
+    },
+    {
+      "id": 9,
+      "name": "PRIVASKBA Sprvá stavebná sporiteľňa, a.s."
+    },
+    {
+      "id": 10,
+      "name": "POBNSKBA Poštová banka a. s."
+    },
+    {
+      "id": 11,
+      "name": "INGBSKBX ING Bank N. V., pobočka zahraničnej banky"
+    },
+    {
+      "id": 12,
+      "name": "CEKOSKBX Československá obchodná banka, a. s."
+    },
+    {
+      "id": 13,
+      "name": "WUSTSKBA Wüstenrot stavebná sporiteľňa, a. s."
+    },
+    {
+      "id": 14,
+      "name": "CORASKBX Commerzbank Aktiengessselschaft, pobočka zahraničnej banky"
+    },
+    {
+      "id": 15,
+      "name": "KOMBSKBA Komerčná banka, a. s., pobočka zahraničnej banky"
+    },
+    {
+      "id": 16,
+      "name": "BSLOSK22 Privatbanka, a. s."
+    },
+    {
+      "id": 17,
+      "name": "CITISKBA Citibank Europe plc, pobočka zahraničnej banky"
+    },
+    {
+      "id": 18,
+      "name": "EXSKSKBX Eximbanka SR"
+    },
+    {
+      "id": 19,
+      "name": "KBSPSKBX ČSOB stavebná sporiteľňa, a. s."
+    },
+    {
+      "id": 20,
+      "name": "SPSRSKBA Štátna pokladnica"
+    },
+    {
+      "id": 21,
+      "name": "JTBPSKBA J ß T Banka, a. s., pobočka zahraničnej banky"
+    },
+    {
+      "id": 22,
+      "name": "FIOZSKBA Fio Banka, a. s., pobočka zahraničnej banky"
+    },
+    {
+      "id": 23,
+      "name": "BREXSKBX mBank S.A., pobočka zahraničnej banky"
+    },
+    {
+      "id": 24,
+      "name": "OBKLSKBA Oberbank AG, pobočka zahraničnej banky v Slovenskej republike"
+    },
+    {
+      "id": 25,
+      "name": "BFKKSKBB BKS Bank AG, pobočka zahraničnej banky v SR"
+    },
+    {
+      "id": 26,
+      "name": "KODBSKBX KDB Bank Europe Ltd., pobočka zahraničnej banky"
+    },
+    {
+      "id": 27,
+      "name": "BNPASA BNP PARIBAS PERSONAL FINANCE S.A., pobočka zahraničnej banky "
+    }
+  ],
+  "premiummonths": [
+    {
+      "id": 1,
+      "name": "6"
+    },
+    {
+      "id": 2,
+      "name": "7"
+    },
+    {
+      "id": 3,
+      "name": "8"
+    },
+    {
+      "id": 4,
+      "name": "9"
+    },
+    {
+      "id": 5,
+      "name": "10"
+    },
+    {
+      "id": 6,
+      "name": "11"
+    },
+    {
+      "id": 7,
+      "name": "12"
+    }
+  ],
+  "wagetypes": [
+    {
+      "id": 1,
+      "name": "Mesačná"
+    },
+    {
+      "id": 2,
+      "name": "Hodinová"
+    },
+    {
+      "id": 3,
+      "name": "Úkolová"
+    }
+  ],
+  "pensioninsurances": [
+    {
+      "id": 1,
+      "name": "AXA d. d. s., a. s. "
+    },
+    {
+      "id": 2,
+      "name": "Dopln. dôch. spoločnosť Tatra banky, a. s."
+    },
+    {
+      "id": 3,
+      "name": "NN Tatry - Sympatia d. d. s., a. s."
+    },
+    {
+      "id": 4,
+      "name": "STABILITA, d. d. s., a. s."
+    }
   ]
 }
