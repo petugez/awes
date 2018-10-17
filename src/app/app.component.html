@@ -1,3 +1,31 @@
+<mat-toolbar  class="container" color="primary">
+        <div fxFlex="100" >
+            <div FlexLayout="row wrap" fx >
+                <button *ngIf="!opened"  mat-icon-button (click)="start.open('mouse')">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <div fxFlex="auto">
+                    {{title}}                 
+                </div>
+    
+                <button mat-icon-button  >
+                    <mat-icon matBadge="15" matBadgeColor="accent" >mail</mat-icon>
+                </button>
+                
+                <button mat-icon-button  >
+                        <mat-icon >person</mat-icon>
+                    </button>
+
+
+                <button mat-icon-button  >
+                    <mat-icon >power_settings_new</mat-icon>
+                </button>
+                
+            </div>
+    
+        </div>
+        
+    </mat-toolbar>
 <mat-sidenav-container  >
 
     <mat-sidenav #start [mode]="mode" [opened]="opened" >
@@ -34,36 +62,9 @@
 
     </mat-sidenav>
 
-    <mat-toolbar  class="container" color="primary">
-        <div fxFlex="100" >
-            <div FlexLayout="row wrap" fx >
-                <button *ngIf="!opened"  mat-icon-button (click)="start.open('mouse')">
-                    <mat-icon>menu</mat-icon>
-                </button>
-                <div fxFlex="auto">
-                    {{title}}                 
-                </div>
-    
-                <button mat-icon-button  >
-                    <mat-icon matBadge="15" matBadgeColor="accent" >mail</mat-icon>
-                </button>
-                
-                <button mat-icon-button  >
-                        <mat-icon >person</mat-icon>
-                    </button>
-
-
-                <button mat-icon-button  >
-                    <mat-icon >power_settings_new</mat-icon>
-                </button>
-                
-            </div>
-    
-        </div>
-        
-    </mat-toolbar>
-    <mat-sidenav-content >
+   
+    <!-- <mat-sidenav-content > -->
     <router-outlet></router-outlet>
-    </mat-sidenav-content>
+    <!-- </mat-sidenav-content> -->
 </mat-sidenav-container>
  
