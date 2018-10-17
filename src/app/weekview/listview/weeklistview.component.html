@@ -1,9 +1,10 @@
-<div>
+<mat-card>
+<div   >
     
-    <mat-form-field>
+    <mat-form-field  >
         <mat-select placeholder="Subject">
             
-            <mat-option *ngFor="let subject of subjects" #test (change)="onSubjectSelected()" [(value)]="subjectSelected">
+            <mat-option  *ngFor="let subject of subjects" #test (change)="onSubjectSelected()" [(value)]="subjectSelected">
                 <mat-icon>visibility</mat-icon> {{subject.name}}
             </mat-option>
             <!-- <mat-select-trigger>
@@ -12,7 +13,7 @@
         </mat-select>
     </mat-form-field>
     
-    <mat-form-field>
+    <mat-form-field > 
         <mat-select placeholder="Year" (change)="onYearSelected()" >
             <mat-option *ngFor="let year of years" [(value)]="yearSelected">
                 {{year.number}}
@@ -22,6 +23,8 @@
     
 </div>
 <div class="cotainer" fxLayout="row wrap" fxFlexAlign="center"  fxLayoutGap="10px" fxLayout.xs="column">
-    <app-week  fxFlex="15" *ngFor="let month of months"  ><h3>xxx</h3></app-week>
+    <app-week  fxFlex="20" *ngFor="let month of months"  ></app-week>
 </div>
+
+</mat-card>
 
