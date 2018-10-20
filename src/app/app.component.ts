@@ -7,7 +7,7 @@ import { MediaChange, ObservableMedia } from "@angular/flex-layout";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'AWES';
@@ -47,5 +47,9 @@ export class AppComponent {
 
   public isAuthorized(): boolean {
     return this.authService.getCurrent() != null;
+  }
+  public getUserName():String{
+    return this.authService.getCurrent().name + " "+ this.authService.getCurrent().surname;
+    return "XXX";
   }
 }

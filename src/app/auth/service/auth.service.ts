@@ -17,7 +17,7 @@ export class AuthService {
     }
 
     public login(): Observable<User> {
-        const url = `http://localhost:3000/currentuser`;
+        const url = `api/currentuser`;
         return this.http.get<User>(url).pipe(
             tap(
                 user => {
